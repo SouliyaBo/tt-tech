@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ST VEGAS</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <main class="register-page flexCenter">
+      <img
+        src="../assets/icons/home-icon.svg"
+        id="mobile-home-button"
+        alt="home-icon"
+      />
+
+      <img class="logo" src="../assets/images/logo-landscape.svg" alt="logo" />
+
+      <div class="progress-step-container flexCenter">
+        <div class="progress-step flexCenter">
+          <div class="step flexCenter">1</div>
+          <small>กรอกเบอร์</small>
+        </div>
+        <hr />
+        <div class="progress-step flexCenter">
+          <div class="step-active flexCenter">2</div>
+          <small>บัญชีธนาคาร</small>
+        </div>
+      </div>
+
+      <div class="text-container">
+        <h3>สมัครสมาชิก</h3>
+        <p>กรอกเลขบัญชี</p>
+      </div>
+
+      <div class="banking-list"></div>
+
+      <div class="phone-input">
+        <div class="input-container flexCenter">
+          <img src="../assets/icons/bank-icon.svg" alt="phone icon" />
+          <label for="phone"></label>
+          <input
+            name="phone"
+            id="phone"
+            type="text"
+            maxlength="9"
+            placeholder="เลขบัญชีธนาคาร"
+          />
+        </div>
+      </div>
+
+      <button class="next-step-button" data-bs-toggle="modal" data-bs-target="#successRegisterModal">ยืนยัน สมัครสมาชิก</button>
+
+      <div
+        class="modal fade"
+        id="successRegisterModal"
+        tabindex="-1"
+        aria-labelledby="successRegisterModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <p class="modal-title">สมัครสมาชิกสำเร็จ</p>
+                <img
+                  src="../assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="register-success-modal-content">
+                <div class="border-input-gold">
+                  <div class="register-info-content">
+                    <p class="register-info-title">ข้อมูลสมัคร</p>
+                    <div class="register-info-group">
+                      <p class="register-info-text">Username:</p>
+                      <p class="register-info-text-bold">0181449403</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="suggest-info">
+                  รหัสคือเลขบัญชีธนาคารที่ลูกค้าสมัครเลยนะคะ ขอให้เล่นให้สนุกเฮงเฮงรวยรวยนะคะลูกค้า
+                </div>
+
+                <button class="next-step-button btn-register-success" id="btn-register-success">เข้าสู่ระบบ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script type="module" src="../scripts/main.js"></script>
+  <script>
+    const homeBtn = document.getElementById("mobile-home-button");
+
+    homeBtn.addEventListener("click", () => {
+      window.location.href = "/";
+    });
+
+    const goToLogin = document.getElementById("btn-register-success");
+
+    goToLogin.addEventListener("click", () => {
+      window.location.href = "/pages/login-page-mobile.html";
+    });
+
+    const bankingList = document.querySelector(".banking-list");
+
+    for (let index = 10; index < 30; index++) {
+      bankingList.innerHTML += `
+        <div class="banking-item flexCenter">
+            <img src="../assets/images/Ellipse ${index}.svg" alt="bank-icon" />
+        </div>`;
+    }
+  </script>
+</html>

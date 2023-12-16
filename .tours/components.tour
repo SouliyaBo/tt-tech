@@ -1,0 +1,24 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Components",
+  "steps": [
+    {
+      "file": "index.html",
+      "description": "Header",
+      "line": 15,
+      "title": "Header"
+    },
+    {
+      "file": "index.html",
+      "description": "Sidebar",
+      "line": 533,
+      "title": "Sidebar"
+    },
+    {
+      "file": "index.html",
+      "description": "Footer",
+      "line": 1987,
+      "title": "Footer"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ST VEGAS</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <main class="register-page flexCenter">
+      <img
+        src="../assets/icons/home-icon.svg"
+        id="mobile-home-button"
+        alt="home-icon"
+      />
+
+      <img class="logo" src="../assets/images/logo-landscape.svg" alt="logo" />
+
+      <div class="progress-step-container flexCenter">
+        <div class="progress-step flexCenter">
+          <div class="step flexCenter">1</div>
+          <small>กรอกเบอร์</small>
+        </div>
+        <hr />
+        <div class="progress-step flexCenter">
+          <div class="step flexCenter">2</div>
+          <small>บัญชีธนาคาร</small>
+        </div>
+        <hr />
+        <div class="progress-step flexCenter">
+          <div class="step-active flexCenter">3</div>
+          <small>สำเร็จ</small>
+        </div>
+      </div>
+
+      <h1>สมัครสมาชิกสำเร็จ</h1>
+
+      <img
+        style="margin-bottom: 20px"
+        src="../assets/images/dog-happy.svg"
+        alt="dog"
+      />
+
+      <button class="next-step-button">เข้าสู่ระบบ</button>
+    </main>
+  </body>
+
+  <script>
+    const homeBtn = document.getElementById("mobile-home-button");
+
+    homeBtn.addEventListener("click", () => {
+      window.location.href = "/";
+    });
+
+    const nextStepBtn = document.querySelector(".next-step-button");
+
+    nextStepBtn.addEventListener("click", () => {
+      window.location.href = "/pages/login-page-mobile.html";
+    });
+  </script>
+</html>

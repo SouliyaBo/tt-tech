@@ -1,0 +1,60 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "CSS",
+  "steps": [
+    {
+      "file": "assets/css/style.scss",
+      "description": "Desktop Responsive",
+      "line": 1979,
+      "title": "Desktop Responsive"
+    },
+    {
+      "file": "assets/css/style.scss",
+      "description": "Animation",
+      "line": 2157,
+      "title": "Animation"
+    },
+    {
+      "file": "assets/css/style.scss",
+      "description": "Modal (Mother)",
+      "line": 2239,
+      "title": "Modal"
+    },
+    {
+      "file": "assets/css/style.scss",
+      "description": "Modal ຝາກຖອນ",
+      "line": 2396,
+      "title": "ຝາກຖອນ Modal"
+    },
+    {
+      "file": "assets/css/style.scss",
+      "description": "ປະຫັວດ Modal",
+      "line": 2584,
+      "title": "ປະຫວັດ Modal"
+    },
+    {
+      "file": "assets/css/style.scss",
+      "description": "ກະເປົ໋າ Modal (Mother)",
+      "line": 2654,
+      "title": "ກະເປົ໋າ Modal"
+    },
+    {
+      "file": "assets/css/style.scss",
+      "description": "ໂປໂມຊັ້ນ Modal",
+      "line": 2866,
+      "title": "ໂປໂມຊັ້ນ Modal"
+    },
+    {
+      "file": "assets/css/style.scss",
+      "description": "ປ່ຽນລະຫັດຜ່ານ Modal",
+      "line": 3048,
+      "title": "ປ່ຽນລະຫັດ Modal"
+    },
+    {
+      "file": "assets/css/style.scss",
+      "description": "ກອກ Code Modal",
+      "line": 3040,
+      "title": "ກອກ Code Modal"
+    }
+  ]
+}

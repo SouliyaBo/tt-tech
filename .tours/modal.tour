@@ -1,0 +1,60 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Modal",
+  "steps": [
+    {
+      "file": "index.html",
+      "description": "Login Modal",
+      "line": 636,
+      "title": "Login"
+    },
+    {
+      "file": "index.html",
+      "description": "Sign Up - Step 1",
+      "line": 728,
+      "title": "Sign Up Step 1"
+    },
+    {
+      "file": "index.html",
+      "description": "Sign Up - Step 2",
+      "line": 752,
+      "title": "Sign Up Step 2"
+    },
+    {
+      "file": "index.html",
+      "description": "Sign Up - Step 3",
+      "line": 894,
+      "title": "Sign Up Step 3"
+    },
+    {
+      "file": "index.html",
+      "description": "ຝາກຖອນ Modal",
+      "line": 916,
+      "title": "ຝາກຖອນ Modal"
+    },
+    {
+      "file": "index.html",
+      "description": "ຝາກອໍໂຕ້ Modal",
+      "line": 1087,
+      "title": "ຝາກອໍໂຕ້ Modal"
+    },
+    {
+      "file": "index.html",
+      "description": "Qr Modal Ster 1",
+      "line": 1506,
+      "title": "Qr Play Step 1 modal"
+    },
+    {
+      "file": "index.html",
+      "description": "Slip Verify Modal",
+      "line": 1496,
+      "title": "Slip Verify Modal"
+    },
+    {
+      "file": "index.html",
+      "description": "Truewallet Modal",
+      "line": 1593,
+      "title": "Truewallet Modal"
+    }
+  ]
+}
