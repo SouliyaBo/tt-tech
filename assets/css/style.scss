@@ -385,7 +385,8 @@ body {
       height: 89px;
       padding: 20px 32px;
       border-radius: 13px;
-
+      cursor: pointer;
+    
       &.active {
         background: linear-gradient(180deg,
             #f9df7b 0%,
@@ -409,6 +410,22 @@ body {
         object-fit: contain;
       }
     }
+    .game-group-item:hover {
+      background: linear-gradient(180deg,
+            #f9df7b 0%,
+            #b57e10 20%,
+            #b78113 26%,
+            #be8c1f 32%,
+            #cb9d32 38%,
+            #dcb64e 44%,
+            #f2d570 49%,
+            #f9df7b 51%,
+            #fff3a6 52%,
+            #f9df7b 59%,
+            #b57e10 84%,
+            #e5c25b 95%,
+            #f9df7b 100%);
+     }
   }
 
   .card-wrapper {
