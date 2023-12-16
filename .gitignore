@@ -1,0 +1,8 @@
+# Ignore nodem_modules folder
+/node_modules
+/node_modules/sass
+
+
+# Ignore the package-lock.json file
+package-lock.json
+.vscode/settings.json

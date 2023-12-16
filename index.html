@@ -1,0 +1,4312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>ST Vegas</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <img
+          src="/assets//images/icon-hamburger.svg"
+          alt="hamburger"
+          class="hamburger"
+          height="37px"
+          width="35px"
+        />
+        <img
+          src="/assets/images/logo.svg"
+          alt="logo"
+          height="49px"
+          style="cursor: pointer"
+          id="banner"
+        />
+      </div>
+      <div class="right">
+        <button
+          type="button"
+          class="desktop-button button"
+          id="singup-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#signUpModal"
+        >
+          สมัครสมาชิก
+        </button>
+
+        <button class="font-20 desktop-button button" id="loginBtn">
+          เข้าสู่ระบบ
+        </button>
+
+        <button class="font-20 mobile-button button" id="registerBtn-mobile">
+          สมัครสมาชิก
+        </button>
+        <button class="font-20 mobile-button button" id="loginBtn-mobile">
+          เข้าสู่ระบบ
+        </button>
+
+        <img
+          src="/assets/images/logo-thai.svg"
+          class="logo-thai"
+          alt="logo thai"
+        />
+      </div>
+    </header>
+    <main class="home">
+      <div class="featured-game-wrapper" id="mobile">
+        <div class="featured-game flexBetween">
+          <img src="/assets/icons/slot-machine.svg" alt="game icon" />
+          <p>สล็อต</p>
+        </div>
+        <div class="featured-game flexBetween">
+          <img src="/assets/icons/circle.svg" alt="game icon" />
+          <p>คาสิโน</p>
+        </div>
+        <div class="featured-game flexBetween">
+          <img src="/assets/icons/fish.svg" alt="game icon" />
+          <p>ยิงปลา</p>
+        </div>
+        <div class="featured-game flexBetween">
+          <img src="/assets/icons/poker-card.svg" alt="game icon" />
+          <p>ป็อกเด้ง</p>
+        </div>
+        <div class="featured-game flexBetween">
+          <img src="/assets/icons/ball.svg" alt="game icon" />
+          <p>กีฬา</p>
+        </div>
+        <div class="featured-game flexBetween">
+          <img src="/assets/icons/graph.svg" alt="game icon" />
+          <p>เกมกราฟ</p>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <img
+          src="/assets/icons/search-icon.svg"
+          alt="icon"
+          class="search-icon"
+        />
+        <label for="search"></label>
+        <input type="text" name="search" id="search" placeholder="ค้นหา" />
+      </div>
+
+      <div class="brand">
+        <div class="slideshow-container">
+          <div class="mySlides fade-slide">
+            <img src="/assets/images/brand.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade-slide">
+            <img src="/assets/images/brand.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade-slide">
+            <img src="/assets/images/brand.png" style="width: 100%" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+
+      <!-- <div class="marquee-custome" id="mobile">
+        <marquee class="description">
+          เว็บตรง ไม่ผ่านเอเย่นต์ อันดับ 1 ฝาก-ถอน ไม่มีขั้นต่ำ ถอนสูงสุดวันละ
+          100 ล้าน สล็อต บาคาร่า หวย กีฬา มีครบจบที่เดียว
+        </marquee>
+      </div> -->
+
+      <section class="featured-game-wrapper" id="desktop">
+        <div class="container flexBetween">
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/slot-machine.svg" alt="game icon" />
+            <p>สล็อต</p>
+          </div>
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/circle.svg" alt="gameicon" />
+            <p>คาสิโน</p>
+          </div>
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/fish.svg" alt="gameicon" />
+            <p>ยิงปลา</p>
+          </div>
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/poker-card.svg" alt="gameicon" />
+            <p>ป็อกเด้ง</p>
+          </div>
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/ball.svg" alt="gameicon" />
+            <p>กีฬา</p>
+          </div>
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/graph.svg" alt="gameicon" />
+            <p>เกมกราฟ</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-container">
+        <div class="card-wrapper">
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+          <div class="game-card">
+            <div class="btn-play-game-container">
+              <a href="game-list.html"
+                ><button class="btn-play-game">เล่นเลย</button></a
+              >
+            </div>
+            <img src="/assets/images/jilli_card.svg" alt="card" />
+          </div>
+        </div>
+      </section>
+
+      <section class="mobile-suggest-game-container">
+        <div class="top flexBetween">
+          <div class="card">
+            <img src="/assets/images/image 84.svg" alt="game icon" />
+            <p>แนะนำบาคาร่า</p>
+          </div>
+          <div class="card">
+            <img src="/assets/images/image 85.png" alt="game icon" />
+            <p>สล็อตมาแรง</p>
+          </div>
+          <div class="card">
+            <img src="/assets/images/image 86.png" alt="game icon" />
+            <p>4 เกมสล็อต แตกหนัก</p>
+          </div>
+          <div class="card">
+            <img src="/assets/images/image 87.png" alt="game icon" />
+            <p>เกมฮิต</p>
+          </div>
+        </div>
+        <div class="bottom">
+
+        </div>
+      </section>
+
+      <section class="game-section">
+        <div class="title flexBetween">
+          <div class="left flexBetween">
+            <img src="/assets/images/image 90.png" alt="logo" />
+            <h4>
+              สล็อตออนไลน์ <br />
+              รวมทุกค่ายเกม
+            </h4>
+          </div>
+          <div class="right">
+            <button>เพี่มเตีม</button>
+          </div>
+        </div>
+        <img
+          src="/assets/images/Rectangle 392.png"
+          alt="game"
+          class="top-image"
+        />
+        <div class="game-list">
+          <button>
+            <img src="assets/images/Rectangle 393.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 397.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 398.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 399.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 400.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 401.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 402.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 403.png" alt="game" />
+          </button>
+        </div>
+      </section>
+
+      <section class="game-section">
+        <div class="title flexBetween">
+          <div class="left flexBetween">
+            <img src="/assets/images/image 91.png" alt="logo" />
+            <h4>
+              คาสิโนสด บาคาร่า <br />
+              ออนไลน์
+            </h4>
+          </div>
+          <div class="right">
+            <button>เพี่มเตีม</button>
+          </div>
+        </div>
+        <img
+          src="/assets/images/Rectangle 413.png"
+          alt="game"
+          class="top-image"
+        />
+        <div class="game-list">
+          <button>
+            <img src="assets/images/Rectangle 404.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 405.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 406.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 407.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 408.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 409.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 410.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 411.png" alt="game" />
+          </button>
+        </div>
+      </section>
+
+      <section class="game-section">
+        <div class="title flexBetween">
+          <div class="left flexBetween">
+            <img src="/assets/images/image 92.png" alt="logo" />
+            <h4>เกมยิงปลา</h4>
+          </div>
+          <div class="right">
+            <button>เพี่มเตีม</button>
+          </div>
+        </div>
+        <img
+          src="/assets/images/Rectangle 423.png"
+          alt="game"
+          class="top-image"
+        />
+        <div class="game-list">
+          <button>
+            <img src="assets/images/Rectangle 414.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 415.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 416.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 417.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 418.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 419.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 420.png" alt="game" />
+          </button>
+          <button>
+            <img src="assets/images/Rectangle 421.png" alt="game" />
+          </button>
+        </div>
+      </section>
+
+      <section class="info-wrapper" id="desktop">
+        <p>tt-tech.com</p>
+        <p style="margin-bottom: 10px">
+          ผู้ให้บริการคาสิโนออนไลน์เราคือ เว็บพนันออนไลน์ ครบวงจร มั่นคง ปลอดภัย
+          ให้บริการ บาคาร่าออนไลน์ สล็อตออนไลน์ ทุกค่าย slotxo pgslot joker jili
+          โปรโมชั่นมากมาย บริการด้วยใจ ฝากถอน รวดเร็ว ไม่มีขั้นต่ำ
+        </p>
+        <p>tt-tech.com มีอะไรดีที่เพื่อนๆ ต้องไม่พลาดสมัครสมาชิก</p>
+        <ol>
+          <li>
+            ไม่มีการฝากขั้นต่ำ: ไม่เหมือนเว็บไซต์การพนันออนไลน์อื่น ๆ Fullbet
+            ไม่กำหนดข้อกําหนดการฝากขั้นต่ำ ๆ
+            คุณมีความเสรีในการฝากเงินใดก็ได้ที่คุณรู้สึกสบายใจ
+            ทำให้คุณควบคุมงบประมาณการพนันของคุณได้อย่างเต็มที่
+          </li>
+          <li>
+            การถอนเงินโดยตรง: บอกลากระบวนการถอนที่ยาวนาน
+            เพราะเรามีการถอนเงินโดยตรง
+            ทำให้คุณสามารถเข้าถึงเงินรางวัลของคุณได้อย่างรวดเร็วและสะดวกสบาย
+            ไม่ต้องรอนานหรือผ่านขั้นตอนการยืนยันที่ไม่จำเป็น
+          </li>
+          <li>
+            เกมที่หลากหลาย มากกว่า 1000 เกม :
+            เราภูมิใจในการมอบให้บริการช่วงเกมที่หลากหลายเพื่อตอบสนองความต้องการของนักพนันทุกคน
+            ตั้งแต่เกมคาสิโนคลาสสิกเช่นแบล็คแจ็คและรูเล็ตไปจนถึงเครื่องสล็อตยอดนิยม
+            คุณจะไม่มีทางจบลงในการสำรวจ
+          </li>
+          <li>
+            ปลอดภัยและเชื่อถือได้ 100% :
+            ความปลอดภัยของคุณเป็นสิ่งสำคัญที่สุดของเรา tt-tech.com
+            ใช้มาตรการรักษาความปลอดภัยขั้นสูงเพื่อปกป้องข้อมูลส่วนตัวและการเงินของคุณ
+            คุณสามารถเล่นพนันได้อย่างมั่นใจในความสงบใจที่ข้อมูลของคุณถูกเข้ารหัสและเก็บไว้เป็นความลับ
+          </li>
+        </ol>
+        <p>
+          คําถามที่พบบ่อย tt-tech.comX เราคือใคร ? tt-tech.comx
+          เป็นเว็บไซต์การพนันออนไลน์ที่มีเกมหลากหลายให้ผู้เล่นสนุกได้
+          นี่เป็นเว็บไซต์ตรงที่คุณสามารถฝากและถอนเงินได้อย่างง่ายดายโดยไม่มีข้อกำหนดขั้นต่ำใดๆ
+          ข้อดีของการเล่น tt-tech.com ? มีข้อดีหลายอย่างในการเล่นบน tt-tech.com
+          ก่อนอื่น ไม่มีเงินฝากขั้นต่ำที่จำเป็น
+          ทำให้ผู้เล่นทุกคนสามารถเข้าร่วมได้ นอกจากนี้
+          เว็บไซต์ยังมีการถอนเงินโดยตรง
+          เพื่อให้คุณสามารถเข้าถึงเงินรางวัลของคุณได้อย่างง่ายดาย นอกจากนี้
+          tt-tech.com ยังมีเกมหลากหลายเพื่อให้ทุกคนได้เลือกเล่น วิธีฝากเงินบน
+          tt-tech.com? การฝากเงินบน tt-tech.com
+          เป็นกระบวนการที่เรียบง่ายและง่ายดาย
+          คุณสามารถโอนเงินจากบัญชีธนาคารของคุณไปยังบัญชี tt-tech.com
+          ของคุณได้อย่างง่ายดายโดยใช้วิธีการชำระเงินต่างๆ เช่น
+          โอนเงินผ่านธนาคารหรือการใช้งาน วอลเล็ต
+          และเว็บไซต์จะมีคำแนะนำอย่างละเอียดเกี่ยวกับวิธีการฝากเงิน
+          เพื่อให้คุณสามารถเริ่มเล่นเกมที่คุณชื่นชอบได้ทันที การเล่นคาสิโนกับเรา
+          tt-tech.com ปลอดภัยหรือไม่? ใช่ การเล่นบน tt-tech.com
+          เป็นการเล่นที่ปลอดภัย
+          เว็บไซต์นี้ใช้มาตรการความปลอดภัยขั้นสูงเพื่อปกป้องข้อมูลส่วนบุคคลและข้อมูลการเงินของคุณ
+          เขาใช้เทคโนโลยีการเข้ารหัสที่ปลอดภัยเพื่อให้การทำธุรกรรมทั้งหมดเป็นไปอย่างปลอดภัย
+          ซึ่งจะทำให้คุณมั่นใจเมื่อเล่นบนแพลตฟอร์มของพวกเขา เรามีเกมส์อะไร
+          ให้เล่นบ้าง? tt-tech.com มีเกมหลากหลายให้ผู้เล่นสนุกได้
+          คุณสามารถค้นหาเกมคาสิโนยอดนิยม เช่น สล็อต รูเล็ต แบล็คแจ็ค
+          และโป๊กเกอร์ นอกจากนี้ พวกเขายังมีการเดิมพันกีฬา
+          เพื่อให้คุณสามารถวางเดิมพันในเหตุการณ์กีฬาต่างๆ ฉันสามารถเล่นบน
+          xx ได้ผ่านอุปกรณ์มือถือไหม? แน่นอน! tt-tech.com
+          เป็นเว็บไซต์ที่เข้ากับอุปกรณ์มือถือได้ง่าย
+          คุณสามารถเล่นเกมที่คุณชื่นชอบได้ทุกที่ทุกเวลา ไม่ว่าคุณจะใช้อุปกรณ์
+          iOS หรือ Android
+          คุณสามารถเข้าถึงเว็บไซต์ผ่านเบราว์เซอร์บนมือถือของคุณและเพลิดเพลินกับประสบการณ์การเล่นเกมที่น
+          seamless tt-tech.com
+          เป็นเว็บไซต์การพนันออนไลน์ที่ให้ประสบการณ์ที่ไม่ธรรมดาพร้อมกับการฝากถอนโดยตรงและไม่มีขั้นต่ำ
+          โดยการให้บริการอินเทอร์เฟซที่ใช้งานง่ายและมีเกมหลากหลาย
+          รับรองว่าผู้เล่นจะได้รับประสบการณ์การพนันที่ไม่มีข้อบกพร่องและสนุกสนาน
+          อย่าพลาดการอัปเดตโพสต์นี้ในอนาคต
+          เพื่อให้เราสามารถให้ข้อมูลล่าสุดเกี่ยวกับ tt-tech.com และการเสนอของมัน
+          อย่าพลาดโอกาสในการเพิ่มคุณลักษณะหรือโปรโมชั่นใหม่!
+        </p>
+      </section>
+
+      <section class="hero-text flexCenter">
+        <h4>Casino คาสิโนออนไลน์ ที่ดีที่สุด</h4>
+        <p>เพื่อประสบการณ์ที่ดีทของผู้เล่นอย่างแท้จริง</p>
+      </section>
+
+      <h3 style="margin: 20px auto; text-align: center; color: white">
+        PARTNERSHIPS
+      </h3>
+
+      <div class="partnership-container">
+        <div>
+          <img alt="partnership" src="/assets/images/logo3-2-3 1 (1).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/jili 1.png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/slotxo 1.png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/funkygame 1.png" />
+        </div>
+
+        <div>
+          <img alt="partnership" src="/assets/images/booongo 1.png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/evoplay 1.png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle.png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (1).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (2).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (3).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (4).png" />
+        </div>
+        <div></div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (6).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (7).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (8).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (9).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (11).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (12).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (13).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (14).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (15).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (16).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (17).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (18).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (19).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (20).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (21).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (22).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (23).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (24).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (25).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (26).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (27).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (28).png" />
+        </div>
+        <div>
+          <img alt="partnership" src="/assets/images/Rectangle (29).png" />
+        </div>
+      </div>
+
+      <h3 style="margin: 20px auto; text-align: center; color: white">
+        PAYMENT ACCEPTED
+      </h3>
+
+      <div class="bank-container">
+        <div class="draggable flexCenter">
+          <!-- All bank icon here -->
+        </div>
+      </div>
+
+      <div id="created-website-by" class="flexCenter">
+        <h3>Created Website By</h3>
+      </div>
+
+      <div id="term-condition" class="flexCenter">
+        <p>Term & Condition</p>
+        <p>Copyright 2022 Casino Alrights Reserved.</p>
+      </div>
+
+      <!-- Side Bar -->
+      <div class="sidebar-container">
+        <aside class="sidebar">
+          <div class="icon-turn-back">
+            <img src="/assets/images/turn-back 1.png" alt="" />
+          </div>
+          <img src="/assets/images/logo-landscape.svg" alt="logo" />
+          <div class="flexBetween font-14">
+            <p>Username:</p>
+            <p>ST1561651</p>
+          </div>
+          <div class="flexBetween font-14">
+            <p>Phone :</p>
+            <p>095-222-9999</p>
+          </div>
+          <div class="balance">
+            <small>ยอดเงินคงเหลือ</small>
+            <p>1,000.00</p>
+          </div>
+
+          <div class="flexBetween" style="gap: 13px">
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="width: 50%"
+              data-bs-toggle="modal"
+              data-bs-target="#profile"
+            >
+              โปรไฟล์
+            </button>
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              data-bs-toggle="modal"
+              data-bs-target="#depositWithdraw"
+              style="width: 50%"
+            >
+              ฝาก-ถอน
+            </button>
+          </div>
+          <div class="flexBetween" style="gap: 13px">
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="width: 50%"
+              id="bag-modal-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#bagModal"
+            >
+              กระเป๋า
+            </button>
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="width: 50%"
+              id="history-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#historyModal"
+            >
+              ประวัติ
+            </button>
+          </div>
+          <div class="flexBetween" style="gap: 13px">
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="width: 50%"
+            >
+              ไลน์บอท
+            </button>
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="width: 50%"
+            >
+              ติดต่อพนักงาน
+            </button>
+          </div>
+          <button
+            class="gradient-border sidebar-button flexCenter"
+            style="width: 100%; margin-bottom: 16px"
+            data-bs-toggle="modal"
+            data-bs-target="#changePasswordModal"
+          >
+            เปลี่ยนรหัสผ่าน
+          </button>
+          <button
+            class="gradient-border sidebar-button flexCenter"
+            style="width: 100%; margin-bottom: 16px"
+          >
+            ออกจากระบบ
+          </button>
+
+          <div class="download-container">
+            <h3>ดาวน์โหลดแอปเลย !</h3>
+            <div class="flexBetween" style="gap: 6px">
+              <img
+                src="/assets//images/get-it-playstore.svg"
+                alt="download icon"
+                style="height: 32px; cursor: pointer"
+              />
+              <img
+                src="/assets//images/get-it-appstore.svg"
+                alt="download icon"
+                style="height: 32px; cursor: pointer"
+              />
+            </div>
+          </div>
+
+          <h4>Power by</h4>
+          <img src="/assets/icons/4x/logo@4x.png" alt="powerby" />
+        </aside>
+        <div class="sidebar-container-background"></div>
+      </div>
+
+      <!-- Login Modal -->
+      <div class="login-modal flexCenter">
+        <div class="login-modal-wrapper flexCenter" id="login-modal">
+          <img
+            src="/assets/icons/x-close.svg"
+            alt="close-icon"
+            class="close-btn"
+            id="login-modal-close-btn"
+          />
+          <img src="/assets/images/logo-landscape.svg" alt="logo" />
+          <h3>เข้าสู่ระบบ</h3>
+          <div class="phone-input">
+            <img src="/assets/icons/phone.svg" alt="icon" />
+            <label for="phone"></label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="เบอร์โทรศัพท์"
+              maxlength="9"
+            />
+          </div>
+          <div class="phone-input" style="margin-top: 20px;">
+            <img src="../assets/icons/lock-alt.svg" alt="lock icon" />
+            <label for="phone"></label>
+            <input
+              name="password"
+              id="password"
+              type="password"
+              placeholder="กรอกรหัสผ่าน"
+            />
+          </div>
+          <div class="danger-text"> รหัสคือเลขบัญชีธนาคารที่ลูกค้าสมัครเลยนะคะ</div>
+          <div class="button-container">
+            <button id="login-btn">เข้าสู่ระบบ</button>
+            <button>สมัครสมาชิก</button>
+          </div>
+          <div class="problem">พบปัญหาติดต่อเรา</div>
+        </div>
+        <div class="background" id="login-modal-background"></div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="signUpModal"
+        tabindex="-1"
+        aria-labelledby="signUpModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="signup-background"></div>
+            <div class="signup-modal-content">
+              <img
+                src="/assets/icons/x-close.svg"
+                alt="close-icon"
+                class="close-btn"
+                id="login-modal-close-btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
+              <div class="signup-modal-body">
+                <img
+                  src="/assets/images/logo-landscape.svg"
+                  class="logo"
+                  alt="logo"
+                />
+                <div class="step-container">
+                  <div class="step-item active" id="step-item1">
+                    <span class="step-item-box">1</span>
+                    <span class="step-item-text">กรอกเบอร์</span>
+                  </div>
+                  <span class="step-line"></span>
+                  <div class="step-item" id="step-item2">
+                    <span class="step-item-box">2</span>
+                    <span class="step-item-text">บัญชีธนาคาร</span>
+                  </div>
+                  <!-- <span class="step-line"></span>
+                  <div class="step-item" id="step-item3">
+                    <span class="step-item-box">3</span>
+                    <span class="step-item-text">สำเร็จ</span>
+                  </div> -->
+                </div>
+
+                <!-- step one -->
+                <div class="step-one" id="form-step-one">
+                  <h3 class="signup-header">สมัครสมาชิก</h3>
+                  <h3 class="signup-title">กรอกเบอร์</h3>
+
+                  <div class="phone-input">
+                    <img src="/assets/icons/phone.svg" alt="icon" />
+                    <label for="phone"></label>
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      placeholder="เบอร์โทรศัพท์"
+                      maxlength="9"
+                    />
+                  </div>
+
+                  <button id="goto-step2">ถัดไป</button>
+                  <div class="already-have-account">
+                    คุณมีบัญชีอยู่แล้ว
+                    <span class="go-to-login">เข้าสู่ระบบ</span>
+                  </div>
+                </div>
+                <!-- end step one -->
+
+                <!-- step two -->
+                <div class="step-two" id="form-step-two">
+                  <h3 class="signup-header">สมัครสมาชิก</h3>
+                  <h3 class="signup-title">กรอกเลขที่บัญชี</h3>
+
+                  <div class="bank-list-container" id="bank-list-container">
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 10.svg"
+                      id="bank1"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 11.svg"
+                      id="bank2"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 12.svg"
+                      id="bank3"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 13.svg"
+                      id="bank4"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 14.svg"
+                      id="bank5"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 15.svg"
+                      id="bank6"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 16.svg"
+                      id="bank7"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 17.svg"
+                      id="bank8"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 18.svg"
+                      id="bank9"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 19.svg"
+                      id="bank10"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 20.svg"
+                      id="bank11"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 21.svg"
+                      id="bank12"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 22.svg"
+                      id="bank13"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 23.svg"
+                      id="bank14"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 24.svg"
+                      id="bank15"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 25.svg"
+                      id="bank16"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 26.svg"
+                      id="bank17"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 27.svg"
+                      id="bank18"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 28.svg"
+                      id="bank19"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 29.svg"
+                      id="bank20"
+                      alt="icon"
+                    />
+                  </div>
+                  <div class="phone-input">
+                    <img src="/assets/icons/bank.svg" alt="icon" />
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      placeholder="เลขบัญชีธนาคาร"
+                      maxlength="9"
+                    />
+                  </div>
+
+                  <button
+                    id="goto-step3"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    data-bs-toggle="modal"
+                    data-bs-target="#successRegisterModal"
+                  >
+                  ยืนยัน สมัครสมาชิก
+                  </button>
+                </div>
+                <!-- step two end -->
+
+                <!-- step three -->
+                <!-- <div class="step-three" id="form-step-three">
+                  <h3 class="signup-header-success">สมัครสมาชิกสำเร็จ</h3>
+                  <div class="img-success-container">
+                    <img
+                      src="/assets/images/ezgif.svg"
+                      class="img-success"
+                      alt="login"
+                    />
+                  </div>
+                  <button
+                    id="goToLoginBtn"
+                    class="modal-icon-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    เข้าสู่ระบบ
+                  </button>
+                </div> -->
+                <!-- step three end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="successRegisterModal"
+        tabindex="-1"
+        aria-labelledby="successRegisterModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <p class="modal-title">สมัครสมาชิกสำเร็จ</p>
+                <img
+                  src="../assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="register-success-modal-content" id="mobile">
+                <div class="border-input-gold">
+                  <div class="register-info-content">
+                    <p class="register-info-title">ข้อมูลสมัคร</p>
+                    <div class="register-info-group">
+                      <p class="register-info-text">Username :</p>
+                      <p class="register-info-text-bold">0181449403</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="suggest-info">
+                  รหัสคือเลขบัญชีธนาคารที่ลูกค้าสมัครเลยนะคะ ขอให้เล่นให้สนุกเฮงเฮงรวยรวยนะคะลูกค้า
+                </div>
+
+                <button
+                  class="next-step-button btn-register-success"
+                  id="goToLoginBtn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  เข้าสู่ระบบ
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- start profile -->
+      <div
+        class="modal fade"
+        id="profile"
+        tabindex="-1"
+        aria-labelledby="profile"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="./assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title">โปรไฟล์</p>
+                <img
+                  src="./assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="change-profile-modal-content">
+                <div class="detail-card-kbank">
+                  <div class="card-kbank">
+                    <div class="font-17">
+                      <p>ธนาคารกสิกรไทย</p>
+                      <div
+                        style="display: flex; justify-content: space-between"
+                      >
+                        <div style="margin-right: 10px">KBank</div>
+                        <img
+                          src="./assets/icons/logo-kbank.svg"
+                          alt="logo"
+                          style="margin-top: -10px"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <p class="font-17">นาย xxxxx xxxxx</p>
+                      <p style="margin-top: 13px; font-size: 14px">
+                        ยอดคงเหลือในระบบ
+                      </p>
+                    </div>
+                    <div class="font-17">
+                      <p>026-999999-9</p>
+                      <p>1000.00 บาท</p>
+                    </div>
+                    <div
+                      style="
+                        margin-top: 30px;
+                        margin-bottom: 25px;
+                        display: flex;
+                        justify-content: end;
+                      "
+                    >
+                      <img src="/assets/icons/visa.svg" alt="visa" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slide-image">
+                  <div class="active"></div>
+                  <div class="none-active"></div>
+                </div>
+                <div class="custom-btn">
+                  <button class="setting">ตั้งเป็นบัญชีหลัก</button>
+                  <button 
+                  class="add-account" 
+                  data-bs-toggle="modal"
+                  data-bs-target="#addAccount"
+                  data-bs-dismiss="modal">เพิ่มบัญชี</button>
+                </div>
+                <div class="change-password-hr">
+                  <div class="hr"></div>
+                </div>
+                <div class="user">
+                  <p class="username">Username</p>
+                  <p class="result">st1745562156</p>
+                </div>
+                <div class="password">
+                  <p class="pass">Password</p>
+                  <p class="result">************</p>
+                </div>
+                <div
+                  class="change-password"
+                  data-bs-toggle="modal"
+                  data-bs-target="#changePasswordModal"
+                  data-bs-dismiss="modal"
+                >
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="51"
+                      height="51"
+                      viewBox="0 0 51 51"
+                      fill="none"
+                    >
+                      <path
+                        d="M25.033 21.7165C24.4104 21.0943 23.4014 21.0945 22.779 21.7171C22.1568 22.3397 22.157 23.3487 22.7796 23.9711L24.309 25.4996L22.7794 27.0294C22.157 27.6518 22.157 28.6607 22.7794 29.2832C23.4018 29.9056 24.4108 29.9056 25.0332 29.2832L26.5634 27.7529L28.0921 29.281C28.7148 29.9032 29.7237 29.903 30.3461 29.2804C30.9683 28.658 30.9681 27.6488 30.3455 27.0266L28.8174 25.4992L30.3457 23.9707C30.9681 23.3482 30.9681 22.3393 30.3457 21.7169C29.7233 21.0944 28.7143 21.0944 28.0919 21.7169L26.563 23.2458L25.033 21.7165Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M11.0915 21.7171C11.7138 21.0945 12.7229 21.0943 13.3454 21.7165L14.8754 23.2458L16.4043 21.7169C17.0267 21.0944 18.0358 21.0944 18.6582 21.7169C19.2806 22.3393 19.2806 23.3482 18.6582 23.9707L17.1298 25.4992L18.6579 27.0266C19.2805 27.6488 19.2807 28.658 18.6585 29.2804C18.0362 29.903 17.0271 29.9032 16.4046 29.281L14.8759 27.7529L13.3457 29.2832C12.7233 29.9056 11.7142 29.9056 11.0918 29.2832C10.4694 28.6607 10.4694 27.6518 11.0918 27.0294L12.6215 25.4996L11.0921 23.9711C10.4695 23.3487 10.4693 22.3397 11.0915 21.7171Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M35.0625 28.6875C34.1823 28.6875 33.4688 29.4011 33.4688 30.2812C33.4688 31.1614 34.1823 31.875 35.0625 31.875H38.7812C39.6614 31.875 40.375 31.1614 40.375 30.2812C40.375 29.4011 39.6614 28.6875 38.7812 28.6875H35.0625Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M11.1546 10.625C7.33975 10.625 4.25 13.7177 4.25 17.5312V33.4688C4.25 37.2829 7.34202 40.375 11.1562 40.375H39.8438C43.6579 40.375 46.75 37.2829 46.75 33.4688V17.5312C46.75 13.7177 43.6602 10.625 39.8454 10.625H11.1546ZM7.4375 17.5312C7.4375 15.4768 9.10144 13.8125 11.1546 13.8125H39.8454C41.8986 13.8125 43.5625 15.4768 43.5625 17.5312V33.4688C43.5625 35.5226 41.8976 37.1875 39.8438 37.1875H11.1562C9.10244 37.1875 7.4375 35.5226 7.4375 33.4688V17.5312Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p>เปลี่ยนรหัสผ่าน</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end profile -->
+      <!-- start  modal add account -->
+      <div
+        class="modal fade"
+        id="addAccount"
+        tabindex="-1"
+        aria-labelledby="addAccount"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="/assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title" id="addAccount">เพิ่มบัญชี</p>
+                <img
+                  src="/assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="add-account-content-pc flexCenter">
+                <div class="bank-section">
+                  <p>กรุณาเลือกธนาคาร</p>
+                  <div class="bank-list">
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 10.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 11.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 12.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 13.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 14.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 15.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 16.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 17.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 18.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 19.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 20.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 21.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 22.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 23.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 24.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 25.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 26.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 27.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 28.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 29.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                  </div>
+                </div>
+
+                <div class="bank-number">
+                  <p>กรุณากรอกเลขบัญชี</p>
+                  <div class="bank-number-input flexCenter">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_912_2229)">
+                          <path
+                            d="M1.6665 16.6665H18.3332V18.3332H1.6665V16.6665ZM3.33317 9.99984H4.99984V15.8332H3.33317V9.99984ZM7.49984 9.99984H9.1665V15.8332H7.49984V9.99984ZM10.8332 9.99984H12.4998V15.8332H10.8332V9.99984ZM14.9998 9.99984H16.6665V15.8332H14.9998V9.99984ZM1.6665 5.83317L9.99984 1.6665L18.3332 5.83317V9.1665H1.6665V5.83317ZM9.99984 6.6665C10.2209 6.6665 10.4328 6.57871 10.5891 6.42243C10.7454 6.26615 10.8332 6.05418 10.8332 5.83317C10.8332 5.61216 10.7454 5.4002 10.5891 5.24392C10.4328 5.08764 10.2209 4.99984 9.99984 4.99984C9.77882 4.99984 9.56686 5.08764 9.41058 5.24392C9.2543 5.4002 9.1665 5.61216 9.1665 5.83317C9.1665 6.05418 9.2543 6.26615 9.41058 6.42243C9.56686 6.57871 9.77882 6.6665 9.99984 6.6665Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_912_2229">
+                            <rect width="20" height="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <input type="number" placeholder="เลขบัญชีธนาคาร" />
+                  </div>
+                </div>
+
+                <button class="button-warning">ยืนยัน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end  modal add account -->
+      <!-- start cashback -->
+      <div
+        class="modal fade"
+        id="cashback"
+        tabindex="-1"
+        aria-labelledby="cashback"
+        aria-hidden="true"
+        data-bs-dismiss="modal"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="/assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title">Cashback</p>
+                <img
+                  src="/assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="change-cashback-modal-content">
+                <div class="card-cashback">
+                  <div
+                    data-bs-toggle="modal"
+                    data-bs-target="#cashbackDetail"
+                    data-bs-dismiss="modal"
+                  >
+                    <div class="card-body">
+                      <div class="name-cashback-game">
+                        <img src="/assets/images/cashback-1.svg" alt="" />
+                        <div class="text">
+                          <p class="name-game">สล๊อต</p>
+                          <p class="balance">คืนยอดเสีย 5.0%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="name-cashback-game">
+                      <img src="/assets/images/cashback-2.svg" alt="" />
+                      <div class="text">
+                        <p class="name-game">บาคาร่า</p>
+                        <p class="balance">คืนยอดเสีย 5.0%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="name-cashback-game">
+                      <img src="/assets/images/cashback-3.svg" alt="" />
+                      <div class="text">
+                        <p class="name-game">ยิงปลา</p>
+                        <p class="balance">คืนยอดเสีย 5.0%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="name-cashback-game">
+                      <img src="/assets/images/cashback-4.svg" alt="" />
+                      <div class="text">
+                        <p class="name-game">ป้อกเด้ง</p>
+                        <p class="balance">คืนยอดเสีย 5.0%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="name-cashback-game">
+                      <img src="/assets/images/cashback-5.svg" alt="" />
+                      <div class="text">
+                        <p class="name-game">หวย</p>
+                        <p class="balance">คืนยอดเสีย 5.0%</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="name-cashback-game">
+                      <img src="/assets/images/cashback-6.svg" alt="" />
+                      <div class="text">
+                        <p class="name-game">กีฬา</p>
+                        <p class="balance">คืนยอดเสีย 5.0%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cashback -->
+
+      <!-- start cashback detail -->
+      <div
+        class="modal fade"
+        id="cashbackDetail"
+        tabindex="-1"
+        aria-labelledby="cashbackDetail"
+        aria-hidden="true"
+        data-bs-dismiss="modal"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="./assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#cashback"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title">Cashback</p>
+                <img
+                  src="./assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="change-cashback-detail-modal-content">
+                <div class="detail">
+                  <div class="title">ยอดเสียเกมส์ สล็อต</div>
+                  <div class="accumulated-lot-amount">
+                    <div class="text-amount">
+                      <div class="text-left">ยอดเสียสะสม 0</div>
+                      <div class="text-right">Cashback 5.00 %</div>
+                    </div>
+                    <div class="text-amount">
+                      <div class="text-left">ยอดเสียวันนี้ 0</div>
+                      <div class="text-right history-background">ประวัติการรับ</div>
+                    </div>
+                  </div>
+                  <div class="your-loss">ยอดเสียของคุณ</div>
+                  <div class="loss">0</div>
+                  <div class="updated">อัพเดทล่าสุด 09-09-65 12.00 น.</div>
+                  <div class="btn">
+                    <button class="receive-credit">รับเข้าเครดิต</button>
+                    <button class="withdraw-to-accont">ถอนเข้าบัญชี</button>
+                  </div>
+                  <div class="description">
+                    <p class="text-left">ขั้นต่ำ 1 สูงสุด 10000</p>
+                    <p class="text-right">ปิดใช้งานก่อนเข้าบัญชี</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cashback detail -->
+
+      <!-- start  modal ฝาก - ถอน -->
+      <div
+        class="modal fade"
+        id="depositWithdraw"
+        tabindex="-1"
+        aria-labelledby="depositWithdraw"
+        aria-hidden="true"
+        data-bs-dismiss="modal"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="./assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                />
+                <p class="modal-title" id="depositWithdraw">ฝาก - ถอน</p>
+                <img
+                  src="./assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="detail-card-kbank">
+                <div class="card-kbank">
+                  <div class="font-17">
+                    <p>ธนาคารกสิกรไทย</p>
+                    <div style="display: flex; justify-content: space-between">
+                      KBank
+                      <img
+                        src="./assets/icons/logo-kbank.svg"
+                        alt="logo"
+                        style="margin-top: -10px"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p class="font-17">นาย xxxxx xxxxx</p>
+                    <p style="margin-top: 13px; font-size: 14px">
+                      ยอดคงเหลือในระบบ
+                    </p>
+                  </div>
+                  <div class="font-17">
+                    <p style="margin-top: -2px">026-999999-9</p>
+                    <p>1000.00 บาท</p>
+                  </div>
+                  <div
+                    style="
+                      margin-top: 20px;
+                      margin-bottom: 30px;
+                      display: flex;
+                      justify-content: end;
+                    "
+                  >
+                    <img src="/assets/icons/visa.svg" alt="visa" />
+                  </div>
+                </div>
+              </div>
+              <div class="slide-image" style="display: flex; justify-content: center;">
+                <div class="active"></div>
+                <div class="none-active"></div>
+              </div>
+
+              <div
+                style="
+                  margin-top: 20px;
+                  display: grid;
+                  color: white;
+                  grid-template-columns: repeat(3, 110px);
+                  gap: 16px;
+                  justify-content: center;
+                "
+              >
+                <div
+                  style="cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#autoDeposit"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="type-of-withdrawal">
+                    <div class="withdrawal">
+                      <img
+                        src="/assets/images/credit-card-machine.svg"
+                        alt="kkk"
+                      />
+                      <div>ฝากเงินออโต้</div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#leaveAdecimal"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="type-of-withdrawal">
+                    <div class="withdrawal">
+                      <img src="/assets/images/Leave a-decimal.svg" alt="kkk" />
+                      <div>ฝากทศนิยม</div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#withdraw"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="type-of-withdrawal">
+                    <div class="withdrawal">
+                      <img src="/assets/images/Withdraw-money.svg" alt="kkk" />
+                      <div>ถอนเงิน</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  style="cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#qrplay"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="type-of-withdrawal">
+                    <div class="withdrawal">
+                      <img src="/assets/images/scan.svg" alt="kkk" />
+                      <div>QR PAY</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  style="cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#slipVerify"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="type-of-withdrawal">
+                    <div class="withdrawal">
+                      <img src="/assets/images/verified.svg" alt="kkk" />
+                      <div>Slip Verify</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  style="cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#trueWallet"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="type-of-withdrawal">
+                    <div class="withdrawal">
+                      <img
+                        src="/assets/images/true-money-wallet.svg"
+                        alt="kkk"
+                      />
+                      <div>Truewallet</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style="text-align: center; margin-top: 10px; font-size: 12px"
+              >
+                <div>
+                  พบปัญหา
+                  <span
+                    style="
+                      color: rgba(0, 252, 252, 1);
+                      text-decoration: underline;
+                      cursor: pointer;
+                    "
+                    >ติดต่อฝ่ายบริการลูกค้า</span
+                  >
+                </div>
+              </div>
+              <div class="button-line">
+                <div>
+                  <img
+                    src="/assets/icons/icon-line.svg"
+                    alt="line"
+                    style="width: 30px; height: 30px"
+                  />
+                  ไลน์บอท / แจ้งเตือนยอดฝาก - ถอน
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end  modal ฝาก - ถอน -->
+
+      <!-- start  modal ฝากออโต้ -->
+      <div
+        class="modal fade"
+        id="autoDeposit"
+        tabindex="-1"
+        aria-labelledby="autoDeposit"
+        aria-hidden="true"
+        data-bs-dismiss="modal"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="/assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#depositWithdraw"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title" id="autoDeposit">ฝากออโต้</p>
+                <img
+                  src="/assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="detail-card-scb">
+                <div class="card-scb">
+                  <div class="left">
+                    <p>ธนาคารกสิกรไทย</p>
+                    <p>
+                      026-999999-9
+                      <span><img src="/assets/images/icon-coppy.svg" alt="" style="width: 20px; height: 20px; margin-bottom: -3px;"/></span>
+                    </p>
+                    <p>นาย xxxxx xxxxx</p>
+                  </div>
+                  <div class="right">
+                    <div class="bank">
+                      <h3>SCB</h3>
+                      <div style="border-radius: 100%">
+                        <img src="/assets/images/scb 1.png" alt="scb" />
+                      </div>
+                    </div>
+
+                    <div class="visa">
+                      <img src="/assets/icons/visa.svg" alt="visa" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-image" style="margin-top: 12px">
+                <div class="active"></div>
+                <div class="none-active"></div>
+              </div>
+              <div>
+                <div class="button-validationt">
+                  <div style="color: white">
+                    กรุณาใช้เลขบัญชีที่สมัครโอนเข้ามาเท่านั้น
+                  </div>
+                </div>
+              </div>
+              <div
+                style="text-align: center; margin-top: 10px; font-size: 14px"
+              >
+                <div>
+                  พบปัญหา
+                  <span
+                    style="
+                      color: rgba(0, 252, 252, 1);
+                      text-decoration: underline;
+                      cursor: pointer;
+                    "
+                    >ติดต่อฝ่ายบริการลูกค้า</span
+                  >
+                </div>
+              </div>
+              <div class="button-line">
+                <div>
+                  <img
+                    src="/assets/icons/icon-line.svg"
+                    style="width: 28px; height: 28px"
+                    alt="line"
+                  />
+                  ไลน์บอท / แจ้งเตือนยอดฝาก - ถอน
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end  modal ฝาก - ถอน -->
+
+      <!-- start  modal ฝากทศนิยม -->
+      <div
+        class="modal fade"
+        id="leaveAdecimal"
+        tabindex="-1"
+        aria-labelledby="leaveAdecimal"
+        aria-hidden="true"
+        data-bs-dismiss="modal"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="./assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#depositWithdraw"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title" id="leaveAdecimal">ฝากทศนิยม</p>
+                <img
+                  src="./assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div style="padding: 20px; padding-top: 30px;">
+                <ul>
+                  <li>ฝากขั้นต่ำ 1.00 บาท สูงสุด 2,000.00 บาท</li>
+                </ul>
+              </div>
+              <div style="width: 100%;">
+                <input
+                  type="text"
+                  class="text-amount-money"
+                  placeholder="กรอกจำนวนเงินที่ต้องการฝาก"
+                />
+                <p style="color: #ff0000; font-size: 14px">กรุณากรอกข้อมูล</p>
+              </div>
+              <div style="width: 100%;">
+                <div
+                  class="confirm-the-amount"
+                  style="cursor: pointer;"
+                  data-bs-toggle="modal"
+                  data-bs-target="#leaveAdecimal1"
+                  data-bs-dismiss="modal"
+                >
+                  <div>ยืนยันจำนวนเงิน</div>
+                </div>
+              </div>
+              <div
+                style="text-align: center; margin-top: 10px; font-size: 12px"
+              >
+                <div>
+                  พบปัญหา
+                  <span
+                    style="
+                      color: rgba(0, 252, 252, 1);
+                      text-decoration: underline;
+                      cursor: pointer;
+                    "
+                    >ติดต่อฝ่ายบริการลูกค้า</span
+                  >
+                </div>
+              </div>
+              <div class="button-line" style="cursor: pointer; font-size: 13px">
+                <div>
+                  <img
+                    src="/assets/icons/icon-line.svg"
+                    style="width: 30px; height: 30px"
+                    alt="line"
+                  />
+                  <span> ไลน์บอท / แจ้งเตือนยอดฝาก - ถอน </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end  modal ฝากทศนิยม -->
+
+      <!-- start  modal ฝากทศนิยม -->
+      <div
+        class="modal fade"
+        id="leaveAdecimal1"
+        tabindex="-1"
+        aria-labelledby="leaveAdecimal1"
+        aria-hidden="true"
+        data-bs-dismiss="modal"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="./assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#leaveAdecimal"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title" id="leaveAdecimal1">ฝากทศนิยม</p>
+                <img
+                  src="./assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div
+                style="
+                  padding: 20px 20px 0 20px;
+                  text-align: center;
+                  font-size: 14px;
+                  font-weight: 500;
+                "
+              >
+                ยอดเงินที่ต้องโอน
+
+                <div
+                  style="
+                    font-size: 40px;
+                    font-weight: 600;
+                    margin-top: 5px;
+                    color: #f9df7b;
+                  "
+                >
+                  111.11
+                </div>
+                <div style="font-size: 14px">
+                  กรุณาโอนเงินภายใน
+                  <span style="color: #ff0000">00.00</span> นาที
+                </div>
+              </div>
+              <div class="detail-card-scb1">
+                <div class="card-scb1">
+                  <div class="left">
+                    <p>ธนาคารกสิกรไทย</p>
+                    <p>นาย xxxxx xxxxx <span><img src="/assets/images/icon-coppy.svg" alt="" style="width: 20px; height: 20px; margin-bottom: -3px;"/></span></p>
+                    <p>026-999999-9</p>
+                  </div>
+                  <div class="right">
+                    <div class="bank">
+                      <h3>SCB</h3>
+                      <div style="border-radius: 100%">
+                        <img src="/assets/images/scb 1.png" alt="scb" />
+                      </div>
+                    </div>
+
+                    <div class="visa">
+                      <img src="/assets/icons/visa.svg" alt="visa" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="button-validationt">
+                  <div style="color: white">
+                    กรุณาใช้เลขบัญชีที่สมัครโอนเข้ามาเท่านั้น
+                  </div>
+                </div>
+              </div>
+              <div style="text-align: center; margin-top: 10px">
+                <div>
+                  พบปัญหา
+                  <span
+                    style="
+                      color: rgba(0, 252, 252, 1);
+                      text-decoration: underline;
+                      cursor: pointer;
+                    "
+                    >ติดต่อฝ่ายบริการลูกค้า</span
+                  >
+                </div>
+              </div>
+              <div class="button-line">
+                <div>
+                  <img
+                    src="/assets/icons/icon-line.svg"
+                    style="width: 30px; height: 30px"
+                    alt="line"
+                  />
+                  ไลน์บอท / แจ้งเตือนยอดฝาก - ถอน
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end  modal ฝากทศนิยม -->
+    </main>
+    <!-- end  modal ฝากทศนิยม -->
+
+    <!-- ถอนเงิน start  modal -->
+
+    <div
+      class="modal fade"
+      id="withdraw"
+      tabindex="-1"
+      aria-labelledby="withdraw"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="/assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#depositWithdraw"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title" id="withdraw">ถอนเงิน</p>
+              <img
+                src="/assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="withdraw-modal-content flexCenter">
+              <div class="detail-card-kbank">
+                <div class="card-kbank">
+                  <div class="font-17">
+                    <p>ธนาคารกสิกรไทย</p>
+                    <div
+                      style="display: flex; justify-content: space-between"
+                    >
+                      <div style="margin-right: 10px">KBank</div>
+                      <img
+                        src="./assets/icons/logo-kbank.svg"
+                        alt="logo"
+                        style="margin-top: -10px"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p class="font-17">นาย xxxxx xxxxx</p>
+                    <p style="margin-top: 13px; font-size: 14px">
+                      ยอดคงเหลือในระบบ
+                    </p>
+                  </div>
+                  <div class="font-17">
+                    <p>026-999999-9</p>
+                    <p>1000.00 บาท</p>
+                  </div>
+                  <div
+                    style="
+                      margin-top: 30px;
+                      margin-bottom: 25px;
+                      display: flex;
+                      justify-content: end;
+                    "
+                  >
+                    <img src="/assets/icons/visa.svg" alt="visa" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider-wrapper flexBetween">
+                <div class="active slider"></div>
+                <div class="slider"></div>
+              </div>
+
+              <div class="money-input flexBetween">
+                <p>จำนวนเงินที่ถอนได้</p>
+                <input type="text" placeholder="1000" />
+              </div>
+              <div class="money-input flexBetween">
+                <p style="color: red">กรุณาระบุจำนวนที่จะถอน</p>
+                <input type="text" placeholder="1000" />
+              </div>
+
+              <div class="button-warning">ถอนเงิน</div>
+
+              <p>พบปัญหา <a href="/">ติดต่อฝ่ายบริการลูกค้า</a></p>
+
+              <button class="line-button flexCenter">
+                <img src="/assets/icons/icon-line.svg" alt="line icon" />
+                <p>ไลน์บอท / แจ้งเตือนยอดฝาก - ถอน</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ถอนเงิน end modal -->
+
+    <!-- start  modal QR Pay -->
+    <div
+      class="modal fade"
+      id="qrplay"
+      tabindex="-1"
+      aria-labelledby="qrplay"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="/assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#depositWithdraw"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title" id="qrplay">QR PAY</p>
+              <img
+                src="/assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="qr-pay-content-1">
+              <div class="notic-text">
+                <ul>
+                  <li>ฝากขั้นต่ำ 100 บาท สูงสุด 50,000.00 บาท *</li>
+                </ul>
+              </div>
+              <div
+                style="
+                  font-size: 12px;
+                  margin-bottom: -10px;
+                  margin-left: 5px;
+                  color: red;
+                "
+              >
+                เลือกธนาคาร
+              </div>
+              <div class="bank-selector">
+                <select class="vodiapicker">
+                  <option
+                    value="kbank"
+                    class="test"
+                    data-thumbnail="https://www.kasikornbank.com/SiteCollectionDocuments/about/img/logo/logo.png"
+                  ></option>
+                  <option
+                    value="au"
+                    data-thumbnail="https://www.uhub.co.th/assets/images/icons/mobile/scb-icon.png"
+                  ></option>
+                </select>
+
+                <!-- <div class="lang-select">
+                  <button class="btn-select" value=""></button
+                  ><img
+                    src="/assets/icons/icon-drow.svg"
+                    alt=""
+                    style="margin: 5px 0 0 -27px"
+                  />
+                  <div class="b">
+                    <ul id="a"></ul>
+                  </div>
+                </div> -->
+                <div class="custom-dropdown" id="custom-dropdown">
+                  <div class="selected-item" id="selected-item"></div>
+                  <img
+                    src="/assets/icons/icon-drow.svg"
+                    alt=""
+                    class="dropdown-icon"
+                  />
+                  <div class="dropdown-list" id="dropdown-list">
+                    <!-- <div class="dropdown-option"><img class="dropdown-item-img" src="https://www.kasikornbank.com/SiteCollectionDocuments/about/img/logo/logo.png" alt=""></div>
+                    <div class="dropdown-option"><img class="dropdown-item-img" src="https://www.uhub.co.th/assets/images/icons/mobile/scb-icon.png" alt=""></div> -->
+                    <img class="dropdown-item-img" src="https://www.kasikornbank.com/SiteCollectionDocuments/about/img/logo/logo.png" alt="">
+                    <img class="dropdown-item-img" src="https://www.uhub.co.th/assets/images/icons/mobile/scb-icon.png" alt="">
+                  </div>
+                </div>
+
+                <div class="show-username-bank">นาย ปปปปป ปปปปป</div>
+              </div>
+
+              <div
+                class="confirmation"
+                style="margin-left: 30px; margin-right: 30px"
+              >
+                <input
+                  type="text"
+                  class="text-amount-money"
+                  placeholder="กรอกจำนวนเงินที่ต้องการฝาก"
+                />
+                <div
+                  class="confirm-the-amount"
+                  style="cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#showQR"
+                  data-bs-dismiss="modal"
+                >
+                  <div>ยืนยันจำนวนเงิน</div>
+                </div>
+              </div>
+
+              <div class="info-text" style="font-size: 13px">
+                <p>
+                  พบปัญหา
+                  <a
+                    href="/"
+                    style="
+                      color: rgba(0, 252, 252, 1);
+
+                      text-decoration: underline;
+                      cursor: pointer;
+                    "
+                    >ติดต่อฝ่ายบริการลูกค้า</a
+                  >
+                </p>
+              </div>
+              <div class="button-line">
+                <div>
+                  <img
+                    src="/assets/icons/icon-line.svg"
+                    style="width: 30px; height: 30px"
+                    alt="line"
+                  />
+                  ไลน์บอท / แจ้งเตือนยอดฝาก - ถอน
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end  modal QR Pay -->
+    <!-- start modal QR  -->
+    <div
+      class="modal fade"
+      id="showQR"
+      tabindex="-1"
+      aria-labelledby="showQR"
+      aria-hidden="true"
+      data-bs-dismiss="modal"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="/assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#qrplay"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title" id="showQR">QR PAY</p>
+              <img
+                src="/assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div style="margin-top: 20px">
+              <div class="detail-qr">
+                <div class="div1">จำนวนเงินฝากผ่าน QR Code</div>
+                <div class="div2">111.11 บาท</div>
+                <div class="div3">
+                  <img src="/assets/images/qrpay.png" alt="qr" />
+                </div>
+                <div class="div4">
+                  <button class="save">
+                    <img src="/assets/icons/farm.svg" alt="save" /> บันทึก
+                  </button>
+                  <button class="refresh">
+                    <img src="/assets/icons/reload.svg" alt="save" /> รีเฟรช
+                  </button>
+                </div>
+                <div class="div5">วิธีการชำระเงิน</div>
+                <div class="div6">
+                  <p>1.บันทึกภาพ หรือ แคปหน้าจอ QR Code</p>
+                  <p>2.เข้าแอปพลิเคชั่นธนาคารที่ต้องการทำรายการฝาก</p>
+                  <p class="danger">
+                    ต้องใช้บัญชีที่ผูกกับระบบทำรายการเข้ามาเท่านั้น
+                  </p>
+                  <p>3.กดเลือกสแกนจ่ายที่แอปธนาคารนั้น ๆ</p>
+                  <p>
+                    4.เลือกรูปภาพ QR Code ที่บันทึกหรือแคป เพื่อทำรายการจ่าย
+                  </p>
+                </div>
+                <div
+                  style="text-align: center; margin-top: 10px; font-size: 12px"
+                >
+                  <div>
+                    พบปัญหา
+                    <span
+                      style="
+                        color: rgba(0, 252, 252, 1);
+                        text-decoration: underline;
+                        cursor: pointer;
+                      "
+                      >ติดต่อฝ่ายบริการลูกค้า</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end modal qr -->
+
+    <!-- slip verify modal -->
+    <div
+      class="modal fade"
+      id="slipVerify"
+      tabindex="-1"
+      aria-labelledby="slipVerifyLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="/assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#depositWithdraw"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">Slip Verify</p>
+              <img
+                src="/assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="slip-verify-content flexCenter">
+              <p class="warning-text">
+                *ใช้ในกรณีที่ธนาคารมีปัญหาหรือยอดฝากไม่เข้า*
+              </p>
+              <div class="bank-selector1">
+                <select class="vodiapicker1">
+                  <option
+                    value="kbank"
+                    class="test"
+                    data-thumbnail="https://www.kasikornbank.com/SiteCollectionDocuments/about/img/logo/logo.png"
+                  ></option>
+                  <option
+                    value="au"
+                    data-thumbnail="https://www.uhub.co.th/assets/images/icons/mobile/scb-icon.png"
+                  ></option>
+                </select>
+
+                <div class="lang-select1">
+                  <button class="btn-select1" value=""></button
+                  ><img
+                    src="/assets/icons/icon-drow.svg"
+                    alt=""
+                    style="margin: 5px 0 0 -27px"
+                  />
+                  <div class="b1">
+                    <ul id="a1"></ul>
+                  </div>
+                </div>
+
+                <div class="show-username-bank">นาย ปปปปป ปปปปป</div>
+              </div>
+              <!-- <div class="bank-selector">
+                <label for="name">เลือกธนาคารบัญชีฝาก</label>
+
+                <div class="flexCenter" style="gap: 8px">
+                  <div class="flexCenter" style="width: 20%">
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 10.svg"
+                      alt="bank icon"
+                      width="33"
+                      height="33"
+                    />
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5442 17.1414L6.28711 10.9062H18.8013L12.5442 17.1414Z"
+                        fill="#FF9900"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    style="width: 80%"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="นาย ปปปปป ปปปปป"
+                  />
+                </div>
+              </div> -->
+
+              <div class="bank-input">
+                <label for="bank">เลือกธนาคารที่ทำรายการฝาก</label>
+                <input type="text" name="bank" placeholder="เลือกธนาคาร" />
+              </div>
+              <div class="bank-input">
+                <label for="bank">กรุณากรอกข้อมูล</label>
+                <input type="text" name="bank" placeholder="0" />
+                <small>กรอกจำนวนเงินตามสลิป</small>
+              </div>
+              <div class="bank-input">
+                <label for="bank">กรุณากรอกข้อมูล</label>
+                <input type="text" name="bank" placeholder="0" />
+                <small>วันที่ทำรายการฝาก</small>
+              </div>
+
+              <button class="button-warning">ยืนยันยอดฝาก</button>
+              <p>พบปัญหา <a href="/">ติดต่อฝ่ายบริการลูกค้า</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slip verify end -->
+
+    <!-- true wallet end modal -->
+    <div
+      class="modal fade"
+      id="trueWallet"
+      tabindex="-1"
+      aria-labelledby="trueWalletLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="/assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#depositWithdraw"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">Truewallet</p>
+              <img
+                src="/assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="true-wallet-content flexCenter">
+              <div class="card flexBetween">
+                <div class="flexCenter left">
+                  <p>ทรูมันนี่ วอทเล็ท</p>
+                  <p>026-999999-9 <span><img src="/assets/images/icon-coppy.svg" alt="" style="width: 20px; height: 20px; margin-bottom: -3px;"/></span></p>
+                  <p>นาย xxxxx xxxxx</p>
+                </div>
+                <div class="flexBetween right">
+                  <div class="true-wallet-title flexBetween">
+                    <p>True Wallet</p>
+
+                    <div>
+                      <img src="/assets/images/true-money-wallet.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="visa">
+                    <img src="/assets/icons/visa.svg" alt="visa" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="warning-box flexCenter">
+                กรุณาใช้เลขบัญชีที่สมัครโอนเข้ามาเท่านั้น
+              </div>
+
+              <p class="suggest-text">
+                พบปัญหา <a href="/">ติดต่อฝ่ายบริการลูกค้า</a>
+              </p>
+
+              <button class="line-button">
+                <img
+                  src="/assets/icons/icon-line.svg"
+                  style="width: 30px; height: 30px"
+                  alt="line icon"
+                />
+                <p>ไลน์บอท / แจ้งเตือนยอดฝาก - ถอน</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- true wallet end -->
+
+    <!-- history modal -->
+    <div
+      class="modal fade"
+      id="historyModal"
+      tabindex="-1"
+      aria-labelledby="historyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <p class="modal-title" id="history-title-deposit">ประวัติฝาก</p>
+              <p class="modal-title" id="history-title-withdraw">ประวัติถอน</p>
+              <p class="modal-title" id="history-title-bonus">ประวัติโบนัส</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="history-modal-content">
+              <div class="history-tab">
+                <div class="history-tab-item active" id="tab-deposit">ฝาก</div>
+                <div class="history-tab-item" id="tab-withdraw">ถอน</div>
+                <div class="history-tab-item" id="tab-bonus">โบนัส</div>
+              </div>
+              <!-- ฝาก -->
+              <div class="history-deposit" id="history-content-deposit">
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ถอน -->
+              <div class="history-withdraw" id="history-content-withdraw">
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- โบนัส -->
+              <div class="history-bonus" id="history-content-bonus">
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- history modal end -->
+
+    <!-- bag modal -->
+    <div
+      class="modal fade"
+      id="bagModal"
+      tabindex="-1"
+      aria-labelledby="bagModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <p class="modal-title">กระเป๋า</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="bag-modal-content">
+              <div class="bag-modal-slide-container">
+                <img src="./assets/images/bag-background.png" alt="" />
+              </div>
+
+              <div class="bag-modal-menu">
+                <div
+                  class="bag-modal-menu-item"
+                  id="promotion-modal-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#promotionModal"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="bag-menu-img-container">
+                    <img
+                      class="bag-menu-icon"
+                      src="./assets/icons/icon-promotion.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="bag-modal-menu-title">โปรโมชั่น</p>
+                </div>
+                <div
+                  class="bag-modal-menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#depositWithdraw"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="bag-menu-img-container">
+                    <img
+                      class="bag-menu-icon"
+                      src="./assets/icons/icon-withdraw.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="bag-modal-menu-title">ฝาก - ถอน</p>
+                </div>
+                <div
+                  class="bag-modal-menu-item"
+                  id="earn-modal-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#earnMoneyModal"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="bag-menu-img-container">
+                    <img
+                      class="bag-menu-icon"
+                      src="./assets/icons/icon-earn-money.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="bag-modal-menu-title">สร้างรายได้</p>
+                </div>
+                <div
+                  class="bag-modal-menu-item"
+                  id="code-modal-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#codeModal"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="bag-menu-img-container">
+                    <img
+                      class="bag-menu-icon"
+                      src="./assets/icons/icon-ticket.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="bag-modal-menu-title">กรอกโค้ด</p>
+                </div>
+                <div
+                  class="bag-modal-menu-item"
+                  id="spinner-modal-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#spinnerModal"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="bag-menu-img-container">
+                    <img
+                      class="bag-menu-icon"
+                      src="./assets/icons/icon-spinner.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="bag-modal-menu-title">กงล้อ</p>
+                </div>
+                <div
+                  class="bag-modal-menu-item"
+                  id="credit-modal-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#creditModal"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="bag-menu-img-container">
+                    <img
+                      class="bag-menu-icon"
+                      src="./assets/icons/icon-teasure.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="bag-modal-menu-title">เครดิตฟรี</p>
+                </div>
+                <div
+                  class="bag-modal-menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#cashback"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="bag-menu-img-container">
+                    <img
+                      class="bag-menu-icon"
+                      src="./assets/icons/icon-back-cash.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="bag-modal-menu-title">คืนยอดเสีย</p>
+                </div>
+                <div
+                  class="bag-modal-menu-item"
+                  id="diamond-modal-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#diamondModal"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="bag-menu-img-container">
+                    <img
+                      class="bag-menu-icon"
+                      src="./assets/icons/icon-diamond.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="bag-modal-menu-title">แลกเพรช</p>
+                </div>
+                <div
+                  class="bag-modal-menu-item"
+                  id="tournament-modal-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#tournamentModal"
+                  data-bs-dismiss="modal"
+                >
+                  <div class="bag-menu-img-container">
+                    <img
+                      class="bag-menu-icon"
+                      src="./assets/icons/icon-trophy.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="bag-modal-menu-title">ทัวร์นาเมนต์</p>
+                </div>
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img
+                      class="bag-menu-icon"
+                      src="./assets/icons/icon-road-map.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="bag-modal-menu-title">Road Map</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bag modal end -->
+
+    <!-- promotion modal -->
+    <div
+      class="modal fade"
+      id="promotionModal"
+      tabindex="-1"
+      aria-labelledby="promotionModalLabel"
+      aria-hidden="true"
+      data-bs-dismiss="modal"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="./assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#bagModal"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">โปรโมชั่น</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="promotion-modal-content">
+              <div class="promotion-modal-body">
+                <div class="promotion-modal-image-container">
+                  <img
+                    src="./assets/images/image-promotion-modal.svg"
+                    class="promotion-modal-image"
+                    alt=""
+                  />
+                </div>
+                <p class="promotion-content-title">สมาชิกใหม่หมุนกงล้อฟรี</p>
+                <p class="promotion-content-text">วันเกิด หมุนกงล้อฟรี !!</p>
+                <p class="promotion-content-text">
+                  (สอบถามข้อมูลเพิ่มเติมได้ที่แอดมิน)
+                </p>
+              </div>
+              <div class="promotion-modal-footer">
+                <div class="promotion-modal-footer-content">
+                  <p class="promotion-modal-footer-title">สถานะโปรโมชั่น</p>
+                  <div class="promotion-checkbox-group">
+                    <input
+                      type="radio"
+                      class="promotion-default-radio"
+                      name="promotion-status"
+                      id="get-promotion"
+                    />
+                    <label class="promotion-checkbox-title" for="get-promotion">
+                      <div class="promotion-custom-radio"></div>
+                      รับโบนัส
+                    </label>
+                    <input
+                      type="radio"
+                      class="promotion-default-radio"
+                      name="promotion-status"
+                      id="not-get-promotion"
+                    />
+                    <label
+                      class="promotion-checkbox-title"
+                      for="not-get-promotion"
+                    >
+                      <div class="promotion-custom-radio"></div>
+                      ไม่รับโบนัส
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- promotion modal end -->
+
+    <!-- code modal -->
+    <div
+      class="modal fade"
+      id="codeModal"
+      tabindex="-1"
+      aria-labelledby="codeModalLabel"
+      aria-hidden="true"
+      data-bs-dismiss="modal"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="./assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#bagModal"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">กรอกโค้ด</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="code-modal-content">
+              <input
+                type="text"
+                placeholder="กรุณากรอกโค้ด"
+                class="input-box"
+              />
+
+              <button type="button" class="button-warning">ยืนยัน</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- code modal end -->
+
+    <!-- credit modal -->
+    <div
+      class="modal fade"
+      id="creditModal"
+      tabindex="-1"
+      aria-labelledby="creditModalLabel"
+      aria-hidden="true"
+      data-bs-dismiss="modal"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="./assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#bagModal"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">เครดิตฟรี</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="credit-modal-content">
+              <div class="border-input-gold">
+                <div class="credit-modal-body">
+                  <!-- show this if no credit -->
+                  <!-- <div class="no-credit">
+                    <div class="no-credit-right">
+                      <p class="no-credit-text">ไม่พบรายการ</p>
+                      <p class="no-credit-text">เครดิตฟรี</p>
+                    </div>
+                  </div> -->
+
+                  <!-- show this if thre is free credit -->
+                  <div class="free-credit">
+                    <div class="credit-point-content">
+                      <img
+                        class="credit-point-img"
+                        src="/assets/images/coin.png"
+                        alt=""
+                      />
+                      <p class="credit-point-text">+100</p>
+                    </div>
+                    <div class="credit-button-content">
+                      <p class="credit-button-title">สามารถรับเครดิตฟรีได้</p>
+                      <button class="btn-credit-confirm">ยินยัน</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- credit modal end -->
+
+    <!-- diamond modal -->
+    <div
+      class="modal fade"
+      id="diamondModal"
+      tabindex="-1"
+      aria-labelledby="diamondModalLabel"
+      aria-hidden="true"
+      data-bs-dismiss="modal"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="./assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#bagModal"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">เพชรฟรี</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="credit-modal-content">
+              <div class="border-input-gold">
+                <div class="credit-modal-body">
+                  <!-- show this if no credit -->
+                  <!-- <div class="no-credit">
+                    <div class="no-credit-right">
+                      <p class="no-credit-text">ไม่พบรายการ</p>
+                      <p class="no-credit-text">เพชรฟรี</p>
+                    </div>
+                  </div> -->
+
+                  <!-- show this if thre is free credit -->
+                  <div class="free-credit">
+                    <div class="credit-point-content">
+                      <img
+                        class="credit-point-img"
+                        src="/assets/images/gem.svg"
+                        alt=""
+                      />
+                      <p class="credit-point-text">+100</p>
+                    </div>
+                    <div class="credit-button-content">
+                      <p class="credit-button-title">สามารถรับเพชรฟรีได้</p>
+                      <button class="btn-credit-confirm">ยินยัน</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- diamond modal end -->
+
+    <!-- tournament modal -->
+    <div
+      class="modal fade"
+      id="tournamentModal"
+      tabindex="-1"
+      aria-labelledby="tournamentModalLabel"
+      aria-hidden="true"
+      data-bs-dismiss="modal"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="./assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#bagModal"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">ทัวร์นาเมนท์</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="tournament-modal-content">
+              <div class="top-recharge-select-container">
+                <div class="top-recharge-select">
+                  <img
+                    class="select-icon"
+                    id="icon-top-play"
+                    src="/assets/icons/icon-top-play.svg"
+                    alt=""
+                  />
+                  <img
+                    class="select-icon"
+                    id="icon-top-recharge"
+                    src="/assets/icons/icon-top-recharge.svg"
+                    alt=""
+                  />
+                  <img
+                    class="select-icon"
+                    id="icon-top-lose"
+                    src="/assets/icons/icon-top-lose.svg"
+                    alt=""
+                  />
+                  <select
+                    class="top-recharge-select-content"
+                    id="top-rank-select"
+                  >
+                    <option value="top-play">ยอดเล่นสูงสุด 30 อันดับ</option>
+                    <option value="top-recharge">
+                      ยอดเติมสูงสุด 30 อันดับ
+                    </option>
+                    <option value="top-lose">ยอดเสียสูงสุด 30 อันดับ</option>
+                  </select>
+                </div>
+              </div>
+
+              <p class="top-rank">TOP RANK</p>
+              <div class="slide-rank">
+                <div class="slide-rank-item top1">
+                  <img
+                    class="rank-icon"
+                    src="/assets/icons/icon-top1.svg"
+                    alt=""
+                  />
+                  <img
+                    class="rank-profile"
+                    src="/assets/images/image-top1.svg"
+                    alt=""
+                  />
+                  <p class="rank-item-text">ST14526641</p>
+                  <!-- <p class="rank-item-text">095-xxx-xxxx</p> -->
+                  <p class="rank-item-text">1,500,000 บาท</p>
+                </div>
+                <div class="slide-rank-item top2">
+                  <img
+                    class="rank-icon"
+                    src="/assets/icons/icon-top2.svg"
+                    alt=""
+                  />
+                  <img
+                    class="rank-profile"
+                    src="/assets/images/image-top2.svg"
+                    alt=""
+                  />
+                  <p class="rank-item-text">ST14526641</p>
+                  <!-- <p class="rank-item-text">095-xxx-xxxx</p> -->
+                  <p class="rank-item-text">1,200,000 บาท</p>
+                </div>
+                <div class="slide-rank-item top3">
+                  <img
+                    class="rank-icon"
+                    src="/assets/icons/icon-top3.svg"
+                    alt=""
+                  />
+                  <img
+                    class="rank-profile"
+                    src="/assets/images/image-top3.svg"
+                    alt=""
+                  />
+                  <p class="rank-item-text">ST14526641</p>
+                  <!-- <p class="rank-item-text">095-xxx-xxxx</p> -->
+                  <p class="rank-item-text">1,000,000 บาท</p>
+                </div>
+                <div class="slide-rank-item">
+                  <img
+                    class="rank-profile"
+                    src="/assets/images/st-vegas-logo.png"
+                    alt=""
+                  />
+                  <p class="rank-item-text">ST14526641</p>
+                  <!-- <p class="rank-item-text">095-xxx-xxxx</p> -->
+                  <p class="rank-item-text">500,000 บาท</p>
+                </div>
+                <div class="slide-rank-item">
+                  <img
+                    class="rank-profile"
+                    src="/assets/images/st-vegas-logo.png"
+                    alt=""
+                  />
+                  <p class="rank-item-text">ST14526641</p>
+                  <!-- <p class="rank-item-text">095-xxx-xxxx</p> -->
+                  <p class="rank-item-text">500,000 บาท</p>
+                </div>
+                <div class="slide-rank-item">
+                  <img
+                    class="rank-profile"
+                    src="/assets/images/st-vegas-logo.png"
+                    alt=""
+                  />
+                  <p class="rank-item-text">ST14526641</p>
+                  <!-- <p class="rank-item-text">095-xxx-xxxx</p> -->
+                  <p class="rank-item-text">500,000 บาท</p>
+                </div>
+                <div class="slide-rank-item">
+                  <img
+                    class="rank-profile"
+                    src="/assets/images/st-vegas-logo.png"
+                    alt=""
+                  />
+                  <p class="rank-item-text">ST14526641</p>
+                  <!-- <p class="rank-item-text">095-xxx-xxxx</p> -->
+                  <p class="rank-item-text">500,000 บาท</p>
+                </div>
+                <div class="slide-rank-item">
+                  <img
+                    class="rank-profile"
+                    src="/assets/images/st-vegas-logo.png"
+                    alt=""
+                  />
+                  <p class="rank-item-text">ST14526641</p>
+                  <!-- <p class="rank-item-text">095-xxx-xxxx</p> -->
+                  <p class="rank-item-text">500,000 บาท</p>
+                </div>
+                <div class="slide-rank-item">
+                  <img
+                    class="rank-profile"
+                    src="/assets/images/st-vegas-logo.png"
+                    alt=""
+                  />
+                  <p class="rank-item-text">ST14526641</p>
+                  <!-- <p class="rank-item-text">095-xxx-xxxx</p> -->
+                  <p class="rank-item-text">500,000 บาท</p>
+                </div>
+                <div class="slide-rank-item">
+                  <img
+                    class="rank-profile"
+                    src="/assets/images/st-vegas-logo.png"
+                    alt=""
+                  />
+                  <p class="rank-item-text">ST14526641</p>
+                  <!-- <p class="rank-item-text">095-xxx-xxxx</p> -->
+                  <p class="rank-item-text">500,000 บาท</p>
+                </div>
+              </div>
+
+              <div class="table-rank">
+                <div class="table-rank-item">
+                  <div class="no-rank">11</div>
+                  <div class="rank-detail">
+                    <div class="rank-phone">095-xxx-xxxx</div>
+                    <div class="rank-detail-title">ยอด</div>
+                    <div class="rank-money">351,353</div>
+                  </div>
+                </div>
+                <div class="table-rank-item">
+                  <div class="no-rank">12</div>
+                  <div class="rank-detail">
+                    <div class="rank-phone">095-xxx-xxxx</div>
+                    <div class="rank-detail-title">ยอด</div>
+                    <div class="rank-money">351,353</div>
+                  </div>
+                </div>
+                <div class="table-rank-item">
+                  <div class="no-rank">13</div>
+                  <div class="rank-detail">
+                    <div class="rank-phone">095-xxx-xxxx</div>
+                    <div class="rank-detail-title">ยอด</div>
+                    <div class="rank-money">351,353</div>
+                  </div>
+                </div>
+                <div class="table-rank-item">
+                  <div class="no-rank">14</div>
+                  <div class="rank-detail">
+                    <div class="rank-phone">095-xxx-xxxx</div>
+                    <div class="rank-detail-title">ยอด</div>
+                    <div class="rank-money">351,353</div>
+                  </div>
+                </div>
+                <div class="table-rank-item">
+                  <div class="no-rank">15</div>
+                  <div class="rank-detail">
+                    <div class="rank-phone">095-xxx-xxxx</div>
+                    <div class="rank-detail-title">ยอด</div>
+                    <div class="rank-money">351,353</div>
+                  </div>
+                </div>
+                <div class="table-rank-item">
+                  <div class="no-rank">16</div>
+                  <div class="rank-detail">
+                    <div class="rank-phone">095-xxx-xxxx</div>
+                    <div class="rank-detail-title">ยอด</div>
+                    <div class="rank-money">351,353</div>
+                  </div>
+                </div>
+                <div class="table-rank-item">
+                  <div class="no-rank">17</div>
+                  <div class="rank-detail">
+                    <div class="rank-phone">095-xxx-xxxx</div>
+                    <div class="rank-detail-title">ยอด</div>
+                    <div class="rank-money">351,353</div>
+                  </div>
+                </div>
+                <div class="table-rank-item">
+                  <div class="no-rank">18</div>
+                  <div class="rank-detail">
+                    <div class="rank-phone">095-xxx-xxxx</div>
+                    <div class="rank-detail-title">ยอด</div>
+                    <div class="rank-money">351,353</div>
+                  </div>
+                </div>
+                <div class="table-rank-item">
+                  <div class="no-rank">19</div>
+                  <div class="rank-detail">
+                    <div class="rank-phone">095-xxx-xxxx</div>
+                    <div class="rank-detail-title">ยอด</div>
+                    <div class="rank-money">351,353</div>
+                  </div>
+                </div>
+                <div class="table-rank-item">
+                  <div class="no-rank">20</div>
+                  <div class="rank-detail">
+                    <div class="rank-phone">095-xxx-xxxx</div>
+                    <div class="rank-detail-title">ยอด</div>
+                    <div class="rank-money">351,353</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tournament modal end -->
+
+    <!-- spinner modal -->
+    <div
+      class="modal fade"
+      id="spinnerModal"
+      tabindex="-1"
+      aria-labelledby="spinnerModalLabel"
+      aria-hidden="true"
+      data-bs-dismiss="modal"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="./assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#bagModal"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">กงล้อ</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="spinner-modal-content">
+              <p class="spinner-modal-title">แต้มทั้งหมด : 0.00</p>
+              <p class="spinner-modal-subtitle">10 แต้ม หมุนกงล้อได้ 1 ครั้ง</p>
+              <div class="spinner-modal-body">
+                <img
+                  class="spinner-modal-img"
+                  src="/assets/images/image-spinner.svg"
+                  alt=""
+                />
+                <button type="button" class="btn-spinner">หมุนกงล้อ</button>
+                <p class="spinner-modal-subtitle2">เครดิตกงล้อ : 0.00</p>
+                <input type="text" placeholder="จำนวนเงิน" class="input-box" />
+                <p class="spinner-modal-text-danger">
+                  แลกเงินเข้าเครดิต ขั้นต่ำ 100.00
+                </p>
+
+                <button type="button" class="button-confirm-warning">
+                  แลกเงินเข้าเครดิต
+                </button>
+                <div class="spinner-rule-container">
+                  <p class="spinner-rule-text">อ่านกฎกติกา</p>
+                  <img
+                    class="spinner-icon-info"
+                    src="/assets/icons/icon-info.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- spinner modal end -->
+
+    <!-- earn money modal -->
+    <div
+      class="modal fade"
+      id="earnMoneyModal"
+      tabindex="-1"
+      aria-labelledby="earnMoneyModalLabel"
+      aria-hidden="true"
+      data-bs-dismiss="modal"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="./assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#bagModal"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">สร้างรายได้</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="earn-modal-content">
+              <div class="earn-qr-container">
+                <div class="border-input-gold">
+                  <div class="earn-qr-content">
+                    <img
+                      class="earn-qr-img"
+                      src="/assets/images/qr-code-image.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-input-gold">
+                <div class="link-shared">
+                  <p class="link-shared-title">ลิ้งค์แนะนำเพื่อน</p>
+                  <p class="link-shared-subtitle">
+                    คุณจะได้รับรายได้ฟรีจากการแนะนำเพื่อน
+                  </p>
+                  <input type="text" class="link-shared-input" />
+
+                  <div class="link-shared-btn-group">
+                    <div class="border-input-gold border-btn">
+                      <button type="button" class="btn-copy-link">
+                        คัดลอกลิ้งค์
+                      </button>
+                    </div>
+                    <button type="button" class="btn-share-link">แชร์</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="earn-menu-content">
+                <div class="border-input-gold">
+                  <div
+                    class="earn-menu-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#earnMoneyDetailModal"
+                    data-bs-dismiss="modal"
+                  >
+                    <img
+                      class="earn-menu-item-img"
+                      src="/assets/images/img-total-plays.svg"
+                      alt=""
+                    />
+                    <p class="earn-menu-item-title">ยอดเล่น</p>
+                    <p class="earn-menu-item-subtitle">
+                      ยอดเล่นของเพื่อนทั้งหมด
+                    </p>
+                  </div>
+                </div>
+                <div class="border-input-gold">
+                  <div class="earn-menu-item">
+                    <img
+                      class="earn-menu-item-img"
+                      src="/assets/images/img-total-lose.png"
+                      alt=""
+                    />
+                    <p class="earn-menu-item-title">ยอดเสีย</p>
+                    <p class="earn-menu-item-subtitle">
+                      ยอดเสียของเพื่อนทั้งหมด
+                    </p>
+                  </div>
+                </div>
+                <div class="border-input-gold">
+                  <div class="earn-menu-item">
+                    <img
+                      class="earn-menu-item-img"
+                      src="/assets/images/img-total-deposit.svg"
+                      alt=""
+                    />
+                    <p class="earn-menu-item-title">ยอดฝาก</p>
+                    <p class="earn-menu-item-subtitle">
+                      ยอดฝากของเพื่อนทั้งหมด
+                    </p>
+                  </div>
+                </div>
+                <div class="border-input-gold">
+                  <div class="earn-menu-item">
+                    <img
+                      class="earn-menu-item-img"
+                      src="/assets/icons/icon-teasure.svg"
+                      alt=""
+                    />
+                    <p class="earn-menu-item-title">รับเครดิตฟรี</p>
+                    <p class="earn-menu-item-subtitle">เครดิตฟรีจากการแนะนำ</p>
+                  </div>
+                </div>
+                <div class="border-input-gold">
+                  <div class="earn-menu-item">
+                    <img
+                      class="earn-menu-item-img"
+                      src="/assets/images/member-suggest.png"
+                      alt=""
+                    />
+                    <p class="earn-menu-item-title">สมาชิกแนะนำ</p>
+                    <p class="earn-menu-item-subtitle">ดูรายละเอียด</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="read-earn-rule">
+                หากมีข้อสงสัยเพิ่มเติม
+                <a href="https://www.google.com/" target="_blank"
+                  >อ่านกฏกติกา</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="earnMoneyDetailModal"
+      tabindex="-1"
+      aria-labelledby="earnMoneyDetailModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="./assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#bagModal"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">สร้างรายได้</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="earn-modal-content">
+              <div class="earn-tab-container">
+                <div class="border-input-gold">
+                  <div class="earn-tab">
+                    <div id="earn-tab-overview" class="earn-tab-item active">
+                      ภาพรวม
+                    </div>
+                    <div class="border-input-gold earn-tab-item-2">
+                      <div id="earn-tab-income" class="earn-tab-item">
+                        รายได้
+                      </div>
+                    </div>
+                    <div id="earn-tab-withdraw-income" class="earn-tab-item">
+                      ถอนรายได้
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="earn-detail-data" id="earn-detail-overview">
+                <div class="filter-date">
+                  <p class="filter-label">ภาพรวมวันที่</p>
+                  <input class="filter-date-input" type="date" name="" id="" />
+                </div>
+
+                <div class="border-input-gold">
+                  <div class="table-earn-date">
+                    <div class="border-input-gold">
+                      <div class="th-earn-container">
+                        <span class="th-earn">วันที่</span>
+                        <span class="th-earn">สมัคร</span>
+                        <span class="th-earn">ฝากเงิน</span>
+                        <span class="th-earn">รายได้</span>
+                      </div>
+                    </div>
+
+                    <div class="tr-earn-container">
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filter-date">
+                  <p class="filter-label">ภาพรวมทั้งเดือน</p>
+                  <select class="filter-date-input">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+
+                <div class="border-input-gold">
+                  <div class="table-earn-date">
+                    <div class="border-input-gold">
+                      <div class="th-earn-container">
+                        <span class="th-earn">เดือน</span>
+                        <span class="th-earn">สมัคร</span>
+                        <span class="th-earn">ฝากเงิน</span>
+                        <span class="th-earn">รายได้</span>
+                      </div>
+                    </div>
+
+                    <div class="tr-earn-container">
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="earn-detail-data" id="earn-detail-income">
+                <div class="filter-date">
+                  <p class="filter-label">ประวัติรายได้</p>
+                  <div style="float: right">
+                    <input
+                      class="filter-date-input"
+                      type="date"
+                      name=""
+                      id=""
+                    />
+                    <select class="filter-date-input">
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="border-input-gold">
+                  <div class="table-earn-date">
+                    <div class="border-input-gold">
+                      <div class="th-earn-container">
+                        <span class="th-earn">วัน/เวลา</span>
+                        <span class="th-earn">ยูสเซอร์</span>
+                        <span class="th-earn">ระดับขั้น</span>
+                        <span class="th-earn">จำนวนเงิน</span>
+                        <span class="th-earn">ชนิด</span>
+                        <span class="th-earn">หมวด</span>
+                      </div>
+                    </div>
+
+                    <div class="tr-earn-container"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="earn-detail-data" id="earn-detail-withdraw-income">
+                <div class="border-input-gold">
+                  <div class="form-withdraw-income">
+                    <div class="form-withdraw-group">
+                      <label class="form-withdraw-label">รายได้ปัจจุบัน</label>
+                      <input type="text" class="form-withdraw-input" />
+                    </div>
+                    <div class="form-withdraw-group">
+                      <label class="form-withdraw-label"
+                        >จำนวนเงินที่ต้องการถอน</label
+                      >
+                      <input
+                        type="text"
+                        placeholder="ถอนไม่มีขั้นต่ำ"
+                        class="form-withdraw-input"
+                      />
+                    </div>
+
+                    <button type="button" class="btn-withdraw-income">
+                      ถอนรายได้
+                    </button>
+                  </div>
+                </div>
+                <div class="filter-date">
+                  <p class="filter-label">ประวัติรายได้</p>
+                  <input class="filter-date-input" type="date" name="" id="" />
+                </div>
+
+                <div class="border-input-gold">
+                  <div class="table-earn-date">
+                    <div class="border-input-gold">
+                      <div class="th-earn-container">
+                        <span class="th-earn">วัน/เวลา</span>
+                        <span class="th-earn">ยูสเซอร์</span>
+                        <span class="th-earn">จำนวนเงิน</span>
+                        <span class="th-earn">สถานะ</span>
+                      </div>
+                    </div>
+
+                    <div class="tr-earn-container">
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">xcczsaw</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">รับแล้ว</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">xcczsaw</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">รับแล้ว</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">xcczsaw</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">รับแล้ว</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="read-earn-rule">
+                หากมีข้อสงสัยเพิ่มเติม
+                <a href="https://www.google.com/" target="_blank"
+                  >อ่านกฏกติกา</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- earn money modal end -->
+
+    <!-- change password modal -->
+    <div
+      class="modal fade"
+      id="changePasswordModal"
+      tabindex="-1"
+      aria-labelledby="changePasswordModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="./assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#bagModal"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">เปลี่ยนรหัส</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="change-password-modal-content">
+              <div class="border-input-gold">
+                <input
+                  type="text"
+                  placeholder="กรุณากรอกรหัสผ่านเดิม"
+                  class="input-for-border-gold"
+                />
+              </div>
+              <div class="change-password-hr">
+                <div class="hr"></div>
+              </div>
+              <div class="border-input-gold">
+                <input
+                  type="text"
+                  placeholder="กรุณากรอกรหัสผ่านใหม่"
+                  class="input-for-border-gold"
+                />
+              </div>
+              <div class="border-input-gold">
+                <input
+                  type="text"
+                  placeholder="กรุณากรอกรหัสผ่านใหม่อีกครั้ง"
+                  class="input-for-border-gold"
+                />
+              </div>
+
+              <button type="button" class="button-warning">ยืนยัน</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- change password modal end -->
+
+    <footer class="footer" id="footer-desktop">
+      <div class="menu-wrapper">
+        <div class="footer-item flexCenter" id="footer-login-button">
+          <img src="/assets/icons/login-icon.svg" alt="login" />
+          <p class="font-20">เข้าสู่ระบบ</p>
+        </div>
+        <div
+          class="footer-item flexCenter"
+          id="footer-signup-button"
+          data-bs-toggle="modal"
+          data-bs-target="#signUpModal"
+        >
+          <img src="/assets/icons/register-icon.svg" alt="login" />
+          <p class="font-20">สมัครสมาชิก</p>
+        </div>
+        <div class="footer-item flexCenter">
+          <img src="/assets/icons/contact-admin.svg" alt="login" />
+          <p class="font-20">ติดต่อแอดมิน</p>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footer" id="footer-mobile">
+      <div class="menu-wrapper">
+        <a href="/pages/login-page-mobile.html" style="text-decoration: none;">
+          <div class="footer-item flexCenter" >
+          <img src="/assets/icons/login-icon.svg" alt="login" />
+          <p class="font-20">เข้าสู่ระบบ</p>
+        </div>
+        </a>
+        <a href="/pages/register-step1.html" style="text-decoration: none;">
+          <div
+          class="footer-item flexCenter"
+        >
+          <img src="/assets/icons/register-icon.svg" alt="login" />
+          <p class="font-20">สมัครสมาชิก</p>
+        </div>
+        </a>
+        <div class="footer-item flexCenter">
+          <img src="/assets/icons/contact-admin.svg" alt="login" />
+          <p class="font-20">ติดต่อแอดมิน</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/scripts/sidebar.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" > <script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/scripts/modal/login.js"></script>
+    <script type="module" src="/scripts/modal/signup.js"></script>
+    <script type="module" src="/scripts/index.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" slide-active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " slide-active";
+      }
+
+      // Auto slide every 3 seconds
+      setInterval(function () {
+        plusSlides(1);
+      }, 3000);
+    </script>
+    <script>
+      const cardEle = document.querySelectorAll(".card");
+      const bottomImg = document.querySelector(".bottom");
+
+      console.log(bottomImg)
+      cardEle[0].classList.remove("card")
+      cardEle[0].classList.add("active-card");
+
+      bottomImg.innerHTML = `
+        <img src="/assets/images/Rectangle 382.svg" alt="game icon" />
+        <img src="/assets/images/Rectangle 383.svg" alt="game icon" />
+        <img src="/assets/images/Rectangle 384.svg" alt="game icon" />
+        <img src="/assets/images/Rectangle 385.svg" alt="game icon" />
+      `;
+
+      // Function to update bottom images based on the active card
+function updateBottomImages(index) {
+  if (index === 0) {
+    bottomImg.innerHTML = `
+      <img src="/assets/images/Rectangle 382.svg" alt="game icon" />
+      <img src="/assets/images/Rectangle 383.svg" alt="game icon" />
+      <img src="/assets/images/Rectangle 384.svg" alt="game icon" />
+      <img src="/assets/images/Rectangle 385.svg" alt="game icon" />
+    `;
+  } else if (index === 1) {
+    bottomImg.innerHTML = `
+      <img src="/assets/images/Rectangle 382.png" alt="game icon" />
+      <img src="/assets/images/Rectangle 383.png" alt="game icon" />
+      <img src="/assets/images/Rectangle 384.png" alt="game icon" />
+      <img src="/assets/images/Rectangle 385.png" alt="game icon" />
+    `;
+  }else if (index === 2) {
+    bottomImg.innerHTML = `
+      <img src="/assets/images/111.png" alt="game icon" />
+      <img src="/assets/images/Rectangle 384.png" alt="game icon" />
+      <img src="/assets/images/Rectangle 383.png" alt="game icon" />
+      <img src="/assets/images/222.png" alt="game icon" />
+    `;
+  }else if (index === 3) {
+    bottomImg.innerHTML = `
+      <img src="/assets/images/444.png" alt="game icon" />
+      <img src="/assets/images/555.png" alt="game icon" />
+      <img src="/assets/images/666.png" alt="game icon" />
+      <img src="/assets/images/111.png" alt="game icon" />
+    `;
+  }
+  // Add other conditions for other cards if needed
+}
+
+      cardEle.forEach((card, index) => {
+        card.addEventListener("click", () => {
+          cardEle.forEach((card) => {
+            card.classList.remove("active-card");
+            card.classList.add("card");
+          });
+          card.classList.remove("card");
+          card.classList.add("active-card");
+
+          // Update bottom images based on the clicked card
+    updateBottomImages(index);
+        });
+      });
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ST VEGAS</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <main class="register-page flexCenter">
+      <img
+        src="../assets/icons/home-icon.svg"
+        id="mobile-home-button"
+        alt="home-icon"
+      />
+
+      <img class="logo" src="../assets/images/logo-landscape.svg" alt="logo" />
+
+      <div class="banner">
+        <img src="/assets/images/login-banner.png" alt="login-banner" />
+      </div>
+
+      <div class="slide-game ">
+        <img src="/assets/images/login-game-1.png" alt="game" />
+        <img src="/assets/images/login-game-2.png" alt="game" />
+        <img src="/assets/images/login-game-3.png" alt="game" />
+      </div>
+
+      <div class="progress-step-container flexCenter">
+        <div class="progress-step flexCenter">
+          <div class="step-active flexCenter">1</div>
+          <small>กรอกเบอร์</small>
+        </div>
+        <hr />
+        <div class="progress-step flexCenter">
+          <div class="step flexCenter">2</div>
+          <small>บัญชีธนาคาร</small>
+        </div>
+        <!-- <hr />
+        <div class="progress-step flexCenter">
+          <div class="step flexCenter">3</div>
+          <small>สำเร็จ</small>
+        </div> -->
+      </div>
+
+      <div class="text-container">
+        <h3>สมัครสมาชิก</h3>
+        <p>กรอกเบอร์</p>
+      </div>
+
+      <div class="phone-input">
+        <div class="input-container flexCenter">
+          <img src="../assets/icons/phone.svg" alt="phone icon" />
+          <label for="phone"></label>
+          <input
+            name="phone"
+            id="phone"
+            type="text"
+            maxlength="9"
+            placeholder="เบอร์โทรศัพท์"
+          />
+        </div>
+      </div>
+
+      <button class="next-step-button">ถัดไป</button>
+
+      <p style="margin-top: 8px;">
+        คุณมีบัญชีอยู่แล้ว
+        <a href="/pages/login-page-mobile.html">เข้าสู่ระบบ</a>
+      </p>
+    </main>
+  </body>
+
+  <script>
+    const homeBtn = document.getElementById("mobile-home-button");
+
+    homeBtn.addEventListener("click", () => {
+      window.location.href = "/";
+    });
+
+    const nextStepBtn = document.querySelector(".next-step-button");
+
+    nextStepBtn.addEventListener("click", () => {
+      window.location.href = "/pages/register-step2.html";
+    });
+  </script>
+</html>

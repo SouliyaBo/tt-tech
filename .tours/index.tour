@@ -1,0 +1,79 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Index",
+  "steps": [
+    {
+      "file": "index.html",
+      "description": "Header",
+      "line": 15,
+      "title": "Header"
+    },
+    {
+      "file": "index.html",
+      "description": "Featured Game Wrapper for Mobile Responsive",
+      "line": 62,
+      "title": "Featured Game - Mobile"
+    },
+    {
+      "file": "index.html",
+      "description": "Search Container",
+      "line": 95,
+      "title": "Search Container"
+    },
+    {
+      "file": "index.html",
+      "description": "Featured Games - Desktop\r\nເອົາໄວ້ສະແດງຜົນເມື່ອໜ້າຈໍເປັນ Desktop",
+      "line": 108,
+      "title": "Featured Games - Desktop"
+    },
+    {
+      "file": "index.html",
+      "description": "Card of Games",
+      "line": 137,
+      "title": "Card of Games Section"
+    },
+    {
+      "file": "index.html",
+      "description": "Mobile Suggest Games Container\r\nເອົາໄວ້ສະແດງຜົນເມື່ອໜ້າຈໍເປັນ Mobile",
+      "line": 160,
+      "title": "Mobile Games Suggest"
+    },
+    {
+      "file": "index.html",
+      "description": "All game sections for mobile\r\nເອົາໄວ້ສະແດງຜົນທຸກເກມ ເມື່ອໜ້າຈໍມີຂະໜາດເປັນ Mobile",
+      "line": 187,
+      "title": "Games Section for Mobile"
+    },
+    {
+      "file": "index.html",
+      "description": "Info Container",
+      "line": 322,
+      "title": "Info Container"
+    },
+    {
+      "file": "index.html",
+      "description": "Hero Text",
+      "line": 397,
+      "title": "Hero Text"
+    },
+    {
+      "file": "index.html",
+      "description": "Partnership section",
+      "line": 402,
+      "title": "Partnership Section"
+    },
+    {
+      "file": "index.html",
+      "description": "Banklist Container",
+      "line": 513,
+      "title": "Banklist Container"
+    },
+    {
+      "file": "index.html",
+      "description": "Footer",
+      "line": 1987,
+      "title": "Footer"
+    }
+  ],
+  "isPrimary": true
+}
