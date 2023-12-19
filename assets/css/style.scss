@@ -1371,7 +1371,7 @@ body {
 // Responsive Mobile
 @media (max-width: 480px) {
   .brand {
-    height: 155px;
+    height: 130px;
   }
   .slideshow-container-after-login {
     // max-width: 1000px;
@@ -1389,7 +1389,7 @@ body {
     .next {
       cursor: pointer;
       position: absolute;
-      top: 50%;
+      top: 40%;
       width: auto;
       padding: 16px;
       margin-top: -22px;
@@ -1499,7 +1499,7 @@ body {
     padding-bottom: 0;
 
     .brand {
-      height: 155px;
+      height: 130px;
 
       img {
         src: url("/assets/images/brand-mobile.png");
@@ -1621,7 +1621,7 @@ body {
     }
 
     .brand {
-      height: 155px;
+      height: 130px;
     }
 
     .featured-game-wrapper#desktop {
@@ -2628,6 +2628,7 @@ body {
     width: 300px;
   }
   .brand {
+    height: 280px;
     img {
       height: 100%;
       width: 100%;
