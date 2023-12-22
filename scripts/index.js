@@ -10,7 +10,7 @@ const bankContainer = document.querySelector(".bank-container");
 
 for (let index = 10; index < 30; index++) {
   bankContainer.children[0].innerHTML += `
-  <div>
+  <div id="item" class="item">
             <img
               alt="bank"
               src="/assets/icons/icon-bank-active/Ellipse ${index}.svg"
