@@ -2263,13 +2263,15 @@ body {
     }
 
     .all-mobile-games {
-      display: grid;
+      display: flex;
       padding-left: 20px;
       padding-right: 20px;
+      flex-direction: column;
+      gap: 20px;
       // grid: auto-flow / repeat(2, 1fr);
-      grid-template-columns: 1fr;
-      margin-bottom: -30px;
-      place-items: center;
+      // grid-template-columns: 1fr;
+      // margin-bottom: -30px;
+      // place-items: center;
 
       button {
         background: none;

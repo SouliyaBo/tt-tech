@@ -1482,12 +1482,11 @@ body {
             height: 100%;
             object-fit: contain; }
     .after-login-mobile-page .all-mobile-games {
-      display: grid;
+      display: flex;
       padding-left: 20px;
       padding-right: 20px;
-      grid-template-columns: 1fr;
-      margin-bottom: -30px;
-      place-items: center; }
+      flex-direction: column;
+      gap: 20px; }
       .after-login-mobile-page .all-mobile-games button {
         background: none;
         outline: none;
