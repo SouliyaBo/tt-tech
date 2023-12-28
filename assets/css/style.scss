@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-$primary-border: #f9df7b, #b57e10, #b78113, #be8c1f, #cb9d32, #dcb64e, #f2d570,
-  #f9df7b, #fff3a6, #f9df7b, #b57e10, #e5c25b, #f9df7b;
-$background: rgba(36, 36, 36, 1), rgba(10, 0, 0, 1), rgba(25, 25, 25, 1),
-  rgba(0, 0, 0, 1), rgba(36, 36, 36, 1);
+$primary-border: #f9df7b, #b57e10, #b78113, #be8c1f, #cb9d32, #dcb64e, #f2d570, #f9df7b, #fff3a6, #f9df7b, #b57e10, #e5c25b, #f9df7b;
+$primary-background: linear-gradient(180deg, #102b36 0%, #081f27 100%);
+
+$background: rgba(36, 36, 36, 1), rgba(10, 0, 0, 1), rgba(25, 25, 25, 1), rgba(0, 0, 0, 1), rgba(36, 36, 36, 1);
 $primary-btn: rgba(193, 147, 59, 1);
 $color-background-input: rgba(67, 61, 61, 1);
 $white: #ffff;
@@ -38,15 +38,11 @@ $breakpoint-desktop: 1024px;
     @media (max-width: $breakpoint-mobile) {
       @content;
     }
-  }
-
-  @else if $breakpoint ==tablet {
+  } @else if $breakpoint ==tablet {
     @media (max-width: $breakpoint-tablet) {
       @content;
     }
-  }
-
-  @else if $breakpoint ==desktop {
+  } @else if $breakpoint ==desktop {
     @media (max-width: $breakpoint-desktop) {
       @content;
     }
@@ -84,12 +80,7 @@ body {
   justify-content: space-between;
   width: 100vw;
   height: 61px;
-  background: linear-gradient(to right,
-      #242424,
-      #0a0000,
-      #191919,
-      #000000,
-      #242424);
+  background: $primary-background;
   padding: 16px 23px 18px 23px;
 
   .left {
@@ -112,12 +103,10 @@ body {
     gap: 15px;
 
     .button {
-      color: $white;
       font-weight: 600;
-      background-color: #000000;
       font-size: 20px;
       border-radius: 38px;
-      border: 1px solid #a68859;
+
       cursor: pointer;
     }
 
@@ -125,6 +114,18 @@ body {
       height: 35px;
       width: 114px;
       font-size: 16px;
+    }
+
+    #singup-btn {
+      border: 1px solid #a68859;
+      color: black;
+      background: #fdd880;
+    }
+
+    #loginBtn {
+      border: 1px solid #fdd880;
+      color: #fdd880;
+      background: none;
     }
 
     .mobile-button {
@@ -146,12 +147,7 @@ body {
   justify-content: space-around;
   width: 100vw;
   height: 61px;
-  background: linear-gradient(to right,
-      #242424,
-      #0a0000,
-      #191919,
-      #000000,
-      #242424);
+  background: $primary-background;
   padding: 16px 23px 18px 23px;
 
   .coin-balance,
@@ -322,13 +318,8 @@ body {
       border: solid 6px transparent;
       /* !importanté */
       border-radius: 1em;
-      border: 3px solid #f9df7b;
-      background: linear-gradient(0deg,
-          #242424 0%,
-          #0a0000 23.44%,
-          #191919 52.6%,
-          #000 81.25%,
-          #242424 100%);
+      border: 3px solid #fdd880;
+      background: $primary-background;
 
       box-shadow: 0px 5px 4px 0px #000;
 
@@ -386,22 +377,24 @@ body {
       padding: 20px 32px;
       border-radius: 13px;
       cursor: pointer;
-    
+
       &.active {
-        background: linear-gradient(180deg,
-            #f9df7b 0%,
-            #b57e10 20%,
-            #b78113 26%,
-            #be8c1f 32%,
-            #cb9d32 38%,
-            #dcb64e 44%,
-            #f2d570 49%,
-            #f9df7b 51%,
-            #fff3a6 52%,
-            #f9df7b 59%,
-            #b57e10 84%,
-            #e5c25b 95%,
-            #f9df7b 100%);
+        background: linear-gradient(
+          180deg,
+          #f9df7b 0%,
+          #b57e10 20%,
+          #b78113 26%,
+          #be8c1f 32%,
+          #cb9d32 38%,
+          #dcb64e 44%,
+          #f2d570 49%,
+          #f9df7b 51%,
+          #fff3a6 52%,
+          #f9df7b 59%,
+          #b57e10 84%,
+          #e5c25b 95%,
+          #f9df7b 100%
+        );
       }
 
       .game-group-img {
@@ -411,21 +404,23 @@ body {
       }
     }
     .game-group-item:hover {
-      background: linear-gradient(180deg,
-            #f9df7b 0%,
-            #b57e10 20%,
-            #b78113 26%,
-            #be8c1f 32%,
-            #cb9d32 38%,
-            #dcb64e 44%,
-            #f2d570 49%,
-            #f9df7b 51%,
-            #fff3a6 52%,
-            #f9df7b 59%,
-            #b57e10 84%,
-            #e5c25b 95%,
-            #f9df7b 100%);
-     }
+      background: linear-gradient(
+        180deg,
+        #f9df7b 0%,
+        #b57e10 20%,
+        #b78113 26%,
+        #be8c1f 32%,
+        #cb9d32 38%,
+        #dcb64e 44%,
+        #f2d570 49%,
+        #f9df7b 51%,
+        #fff3a6 52%,
+        #f9df7b 59%,
+        #b57e10 84%,
+        #e5c25b 95%,
+        #f9df7b 100%
+      );
+    }
   }
 
   .card-wrapper {
@@ -438,7 +433,9 @@ body {
 
     .game-card {
       position: relative;
-      border-radius: 30px;
+      border-radius: 10px;
+      border: 3px solid #fdd880;
+      height: 286px;
 
       &:hover {
         .btn-play-game-container {
@@ -447,9 +444,7 @@ body {
           align-items: center;
 
           .btn-play-game {
-            background: linear-gradient(109.6deg,
-                rgb(255, 219, 47) 11.2%,
-                rgb(244, 253, 0) 100.2%);
+            background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
             border-radius: 20px;
             color: $white;
             cursor: pointer;
@@ -502,20 +497,22 @@ body {
           border-radius: 10px;
           font-size: 18px;
           font-weight: 600;
-          background: linear-gradient(180deg,
-              #f9df7b 0%,
-              #b57e10 20%,
-              #b78113 26%,
-              #be8c1f 32%,
-              #cb9d32 38%,
-              #dcb64e 44%,
-              #f2d570 49%,
-              #f9df7b 51%,
-              #fff3a6 52%,
-              #f9df7b 59%,
-              #b57e10 84%,
-              #e5c25b 95%,
-              #f9df7b 100%);
+          background: linear-gradient(
+            180deg,
+            #f9df7b 0%,
+            #b57e10 20%,
+            #b78113 26%,
+            #be8c1f 32%,
+            #cb9d32 38%,
+            #dcb64e 44%,
+            #f2d570 49%,
+            #f9df7b 51%,
+            #fff3a6 52%,
+            #f9df7b 59%,
+            #b57e10 84%,
+            #e5c25b 95%,
+            #f9df7b 100%
+          );
         }
       }
     }
@@ -540,9 +537,7 @@ body {
           align-items: center;
 
           .btn-play-game {
-            background: linear-gradient(109.6deg,
-                rgb(255, 219, 47) 11.2%,
-                rgb(244, 253, 0) 100.2%);
+            background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
             border-radius: 20px;
             color: $white;
             cursor: pointer;
@@ -592,20 +587,22 @@ body {
         border-radius: 10px;
         font-size: 18px;
         font-weight: 600;
-        background: linear-gradient(180deg,
-            #f9df7b 0%,
-            #b57e10 20%,
-            #b78113 26%,
-            #be8c1f 32%,
-            #cb9d32 38%,
-            #dcb64e 44%,
-            #f2d570 49%,
-            #f9df7b 51%,
-            #fff3a6 52%,
-            #f9df7b 59%,
-            #b57e10 84%,
-            #e5c25b 95%,
-            #f9df7b 100%);
+        background: linear-gradient(
+          180deg,
+          #f9df7b 0%,
+          #b57e10 20%,
+          #b78113 26%,
+          #be8c1f 32%,
+          #cb9d32 38%,
+          #dcb64e 44%,
+          #f2d570 49%,
+          #f9df7b 51%,
+          #fff3a6 52%,
+          #f9df7b 59%,
+          #b57e10 84%,
+          #e5c25b 95%,
+          #f9df7b 100%
+        );
       }
     }
   }
@@ -660,7 +657,7 @@ body {
   gap: 1rem;
   justify-content: center;
 
-  &>div {
+  & > div {
     img {
       width: 100px;
       height: 100px;
@@ -736,12 +733,7 @@ body {
 
     border-radius: 0px 20px 20px 0px;
     border: 2px solid #f9df7b;
-    background: linear-gradient(270deg,
-        #242424 0%,
-        #0a0000 23.44%,
-        #191919 52.6%,
-        #000 81.25%,
-        #242424 100%);
+    background: linear-gradient(270deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000 81.25%, #242424 100%);
 
     animation: slideInFromLeft 0.5s ease-in-out;
     padding: 26px 31px;
@@ -841,12 +833,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(270deg,
-      #242424 0%,
-      #0a0000 23.44%,
-      #191919 52.6%,
-      #000 81.25%,
-      #242424 100%);
+  background: $primary-background;
   box-shadow: 0px -4px 7px 0px rgba(0, 0, 0, 0.39);
 
   .menu-wrapper {
@@ -863,6 +850,10 @@ body {
       background: none;
       outline: none;
       border: none;
+
+      p {
+        color: rgba(253, 216, 128, 1);
+      }
 
       img {
         width: 44px;
@@ -1036,7 +1027,6 @@ body {
       }
     }
 
-    
     .danger-text {
       margin-top: 20px;
       border: 1px solid #f00;
@@ -1050,7 +1040,7 @@ body {
     .button-container {
       margin-top: 47px;
       width: 100%;
-      
+
       button {
         width: 100%;
         height: 51px;
@@ -1183,20 +1173,22 @@ body {
           right: -3px;
           bottom: -3px;
           border-radius: 10px;
-          background: linear-gradient(90deg,
-              rgba(249, 223, 123, 1) 0%,
-              rgba(181, 126, 16, 1) 20%,
-              rgba(183, 129, 19, 1) 26%,
-              rgba(190, 140, 31, 1) 32%,
-              rgba(203, 157, 50, 1) 38%,
-              rgba(220, 182, 78, 1) 44%,
-              rgba(242, 213, 112, 1) 49%,
-              rgba(249, 223, 123, 1) 51%,
-              rgba(255, 243, 166, 1) 52%,
-              rgba(249, 223, 123, 1) 59%,
-              rgba(181, 126, 16, 1) 84%,
-              rgba(229, 194, 91, 1) 95%,
-              rgba(249, 223, 123, 1) 100%);
+          background: linear-gradient(
+            90deg,
+            rgba(249, 223, 123, 1) 0%,
+            rgba(181, 126, 16, 1) 20%,
+            rgba(183, 129, 19, 1) 26%,
+            rgba(190, 140, 31, 1) 32%,
+            rgba(203, 157, 50, 1) 38%,
+            rgba(220, 182, 78, 1) 44%,
+            rgba(242, 213, 112, 1) 49%,
+            rgba(249, 223, 123, 1) 51%,
+            rgba(255, 243, 166, 1) 52%,
+            rgba(249, 223, 123, 1) 59%,
+            rgba(181, 126, 16, 1) 84%,
+            rgba(229, 194, 91, 1) 95%,
+            rgba(249, 223, 123, 1) 100%
+          );
           z-index: -1;
         }
 
@@ -1309,8 +1301,7 @@ body {
     .bank-list-container {
       padding: 16px 12px;
       display: grid;
-      grid-template-columns: repeat(8,
-          1fr);
+      grid-template-columns: repeat(8, 1fr);
       /* Creates 3 columns of equal size */
       justify-content: center;
       grid-gap: 11px;
@@ -1523,7 +1514,7 @@ body {
 
       top: 30px;
 
-      &>* {
+      & > * {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1723,7 +1714,7 @@ body {
       gap: 1rem;
       justify-content: center;
 
-      &>div {
+      & > div {
         img {
           width: 40px;
           height: 40px;
@@ -1783,8 +1774,6 @@ body {
 
     position: relative;
     flex-direction: column;
-
-
 
     #mobile-home-button {
       position: absolute;
@@ -2186,7 +2175,7 @@ body {
       padding: 6px 17px;
       color: white;
 
-      &>* {
+      & > * {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2283,9 +2272,7 @@ body {
           position: absolute;
           text-decoration: none;
           padding: 2px 10px 2px 10px;
-          background: linear-gradient(109.6deg,
-              rgb(255, 219, 47) 11.2%,
-              rgb(244, 253, 0) 100.2%);
+          background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
           color: $white;
           font-weight: 600;
           border-radius: 10px;
@@ -2337,9 +2324,7 @@ body {
           position: absolute;
           text-decoration: none;
           padding: 2px 10px 2px 10px;
-          background: linear-gradient(109.6deg,
-              rgb(255, 219, 47) 11.2%,
-              rgb(244, 253, 0) 100.2%);
+          background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
           color: $white;
           font-weight: 600;
           border-radius: 10px;
@@ -2531,15 +2516,14 @@ body {
       height: 85px;
       border-radius: 15px;
       border: 2px solid #f9df7b;
-      background: url(<path-to-image>),
-        lightgray -35.773px -30.472px / 127.308% 138.095% no-repeat,
-        linear-gradient(257deg, #3e0048 0%, #8900a0 100%);
+      background: url(<path-to-image>), lightgray -35.773px -30.472px / 127.308% 138.095% no-repeat, linear-gradient(257deg, #3e0048 0%, #8900a0 100%);
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
       background-image: url("/assets/images/purple-card-bg.svg");
       background-position: center;
 
-      .left {}
+      .left {
+      }
 
       .right {
         height: 100%;
@@ -2620,8 +2604,6 @@ body {
 }
 
 // End of Mobile Page
-
-
 
 @media only screen and (min-width: 481px) {
   .register-success-modal-content {
@@ -2980,7 +2962,6 @@ body {
           }
 
           .slider-wrapper {
-
             .active.slider,
             .slider {
               width: 75px;
@@ -2995,7 +2976,8 @@ body {
               font-size: 16px;
             }
 
-            input {}
+            input {
+            }
           }
 
           .button-warning {
@@ -3395,9 +3377,11 @@ body {
                 }
 
                 .text {
-                  .name-game {}
+                  .name-game {
+                  }
 
-                  .balance {}
+                  .balance {
+                  }
                 }
               }
             }
@@ -3840,7 +3824,6 @@ body {
           }
 
           .bank-selector {
-
             #a img,
             .btn-select img {
               width: 30px;
@@ -3865,9 +3848,11 @@ body {
             margin-top: 20px;
           }
 
-          .info-text {}
+          .info-text {
+          }
 
-          .qrpay {}
+          .qrpay {
+          }
 
           .button-line {
             div {
@@ -3915,7 +3900,8 @@ body {
           .div6 {
             font-size: 12px;
 
-            .danger {}
+            .danger {
+            }
           }
         }
 
@@ -3949,7 +3935,7 @@ body {
 
   // End Modal
 
-  // Start Add Account 
+  // Start Add Account
   .add-account-content-pc {
     margin-top: 20px;
     padding: 15px;
@@ -4026,9 +4012,7 @@ body {
     }
   }
 
-  // End Add Account 
-
-  
+  // End Add Account
 }
 .register-success-modal-content {
   // width: 300px;
@@ -4191,20 +4175,7 @@ body {
     position: relative;
 
     z-index: -15;
-    background: linear-gradient(90deg,
-        rgba(249, 223, 123, 1) 0%,
-        rgba(181, 126, 16, 1) 20%,
-        rgba(183, 129, 19, 1) 26%,
-        rgba(190, 140, 31, 1) 32%,
-        rgba(203, 157, 50, 1) 38%,
-        rgba(220, 182, 78, 1) 44%,
-        rgba(242, 213, 112, 1) 49%,
-        rgba(249, 223, 123, 1) 51%,
-        rgba(255, 243, 166, 1) 52%,
-        rgba(249, 223, 123, 1) 59%,
-        rgba(181, 126, 16, 1) 84%,
-        rgba(229, 194, 91, 1) 95%,
-        rgba(249, 223, 123, 1) 100%);
+    background: #fdd880;
     border-radius: 20px;
     margin: auto;
     padding: 2px;
@@ -4220,7 +4191,7 @@ body {
     // max-width: 315px;
     position: relative;
     z-index: -10;
-    background-color: #000;
+    background: $primary-background;
     border-radius: 20px;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -4241,13 +4212,8 @@ body {
       position: relative;
       margin: auto;
       width: fit-content;
-      background: linear-gradient(270deg,
-          #242424 0%,
-          #0a0000 23.44%,
-          #191919 52.6%,
-          #000000 81.25%,
-          #242424 100%);
-      border-radius: 15px;
+      background: $primary-background;
+      border-radius: 10px;
       padding: 10px;
       display: flex;
       justify-content: center;
@@ -4263,21 +4229,8 @@ body {
       right: -2px;
       bottom: -2px;
       z-index: -1;
-      background: linear-gradient(90deg,
-          rgba(249, 223, 123, 0.8) 0%,
-          rgba(181, 126, 16, 0.8) 20%,
-          rgba(183, 129, 19, 0.8) 26%,
-          rgba(190, 140, 31, 0.8) 32%,
-          rgba(203, 157, 50, 0.8) 38%,
-          rgba(220, 182, 78, 0.8) 44%,
-          rgba(242, 213, 112, 0.8) 49%,
-          rgba(249, 223, 123, 0.8) 51%,
-          rgba(255, 243, 166, 0.8) 52%,
-          rgba(249, 223, 123, 0.8) 59%,
-          rgba(181, 126, 16, 0.8) 84%,
-          rgba(229, 194, 91, 0.8) 95%,
-          rgba(249, 223, 123, 0.8) 100%);
-      border-radius: 15px;
+      background: #fdd880;
+      border-radius: 10px;
       pointer-events: none;
     }
 
@@ -4546,20 +4499,22 @@ body {
       width: 47px;
       height: 3px;
       border-radius: 16px;
-      background: linear-gradient(90deg,
-          rgba(249, 223, 123, 0.8) 0%,
-          rgba(181, 126, 16, 0.8) 20%,
-          rgba(183, 129, 19, 0.8) 26%,
-          rgba(190, 140, 31, 0.8) 32%,
-          rgba(203, 157, 50, 0.8) 38%,
-          rgba(220, 182, 78, 0.8) 44%,
-          rgba(242, 213, 112, 0.8) 49%,
-          rgba(249, 223, 123, 0.8) 51%,
-          rgba(255, 243, 166, 0.8) 52%,
-          rgba(249, 223, 123, 0.8) 59%,
-          rgba(181, 126, 16, 0.8) 84%,
-          rgba(229, 194, 91, 0.8) 95%,
-          rgba(249, 223, 123, 0.8) 100%);
+      background: linear-gradient(
+        90deg,
+        rgba(249, 223, 123, 0.8) 0%,
+        rgba(181, 126, 16, 0.8) 20%,
+        rgba(183, 129, 19, 0.8) 26%,
+        rgba(190, 140, 31, 0.8) 32%,
+        rgba(203, 157, 50, 0.8) 38%,
+        rgba(220, 182, 78, 0.8) 44%,
+        rgba(242, 213, 112, 0.8) 49%,
+        rgba(249, 223, 123, 0.8) 51%,
+        rgba(255, 243, 166, 0.8) 52%,
+        rgba(249, 223, 123, 0.8) 59%,
+        rgba(181, 126, 16, 0.8) 84%,
+        rgba(229, 194, 91, 0.8) 95%,
+        rgba(249, 223, 123, 0.8) 100%
+      );
     }
 
     .slider {
@@ -4804,20 +4759,22 @@ body {
     }
 
     .active.slider {
-      background: linear-gradient(90deg,
-          rgba(249, 223, 123, 0.8) 0%,
-          rgba(181, 126, 16, 0.8) 20%,
-          rgba(183, 129, 19, 0.8) 26%,
-          rgba(190, 140, 31, 0.8) 32%,
-          rgba(203, 157, 50, 0.8) 38%,
-          rgba(220, 182, 78, 0.8) 44%,
-          rgba(242, 213, 112, 0.8) 49%,
-          rgba(249, 223, 123, 0.8) 51%,
-          rgba(255, 243, 166, 0.8) 52%,
-          rgba(249, 223, 123, 0.8) 59%,
-          rgba(181, 126, 16, 0.8) 84%,
-          rgba(229, 194, 91, 0.8) 95%,
-          rgba(249, 223, 123, 0.8) 100%);
+      background: linear-gradient(
+        90deg,
+        rgba(249, 223, 123, 0.8) 0%,
+        rgba(181, 126, 16, 0.8) 20%,
+        rgba(183, 129, 19, 0.8) 26%,
+        rgba(190, 140, 31, 0.8) 32%,
+        rgba(203, 157, 50, 0.8) 38%,
+        rgba(220, 182, 78, 0.8) 44%,
+        rgba(242, 213, 112, 0.8) 49%,
+        rgba(249, 223, 123, 0.8) 51%,
+        rgba(255, 243, 166, 0.8) 52%,
+        rgba(249, 223, 123, 0.8) 59%,
+        rgba(181, 126, 16, 0.8) 84%,
+        rgba(229, 194, 91, 0.8) 95%,
+        rgba(249, 223, 123, 0.8) 100%
+      );
     }
 
     .slider {
@@ -4869,20 +4826,22 @@ body {
     .card-body {
       position: relative;
       z-index: -15;
-      background: linear-gradient(90deg,
-          rgba(249, 223, 123, 1) 0%,
-          rgba(181, 126, 16, 1) 20%,
-          rgba(183, 129, 19, 1) 26%,
-          rgba(190, 140, 31, 1) 32%,
-          rgba(203, 157, 50, 1) 38%,
-          rgba(220, 182, 78, 1) 44%,
-          rgba(242, 213, 112, 1) 49%,
-          rgba(249, 223, 123, 1) 51%,
-          rgba(255, 243, 166, 1) 52%,
-          rgba(249, 223, 123, 1) 59%,
-          rgba(181, 126, 16, 1) 84%,
-          rgba(229, 194, 91, 1) 95%,
-          rgba(249, 223, 123, 1) 100%);
+      background: linear-gradient(
+        90deg,
+        rgba(249, 223, 123, 1) 0%,
+        rgba(181, 126, 16, 1) 20%,
+        rgba(183, 129, 19, 1) 26%,
+        rgba(190, 140, 31, 1) 32%,
+        rgba(203, 157, 50, 1) 38%,
+        rgba(220, 182, 78, 1) 44%,
+        rgba(242, 213, 112, 1) 49%,
+        rgba(249, 223, 123, 1) 51%,
+        rgba(255, 243, 166, 1) 52%,
+        rgba(249, 223, 123, 1) 59%,
+        rgba(181, 126, 16, 1) 84%,
+        rgba(229, 194, 91, 1) 95%,
+        rgba(249, 223, 123, 1) 100%
+      );
       border-radius: 10px;
       margin: auto;
       padding: 2px;
@@ -4899,12 +4858,7 @@ body {
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        background: linear-gradient(270deg,
-            #242424 0%,
-            #0a0000 23.44%,
-            #191919 52.6%,
-            #000 81.25%,
-            #242424 100%);
+        background: linear-gradient(270deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000 81.25%, #242424 100%);
         // padding-left: 16px;
 
         img {
@@ -4978,7 +4932,7 @@ body {
         .history-background {
           font-weight: 500;
           color: #000;
-          background-color: #0FF;
+          background-color: #0ff;
           border-radius: 5px;
           padding: 2px 5px 2px 5px;
         }
@@ -5133,20 +5087,22 @@ body {
 .type-of-withdrawal {
   position: relative;
   z-index: -15;
-  background: linear-gradient(90deg,
-      rgba(249, 223, 123, 1) 0%,
-      rgba(181, 126, 16, 1) 20%,
-      rgba(183, 129, 19, 1) 26%,
-      rgba(190, 140, 31, 1) 32%,
-      rgba(203, 157, 50, 1) 38%,
-      rgba(220, 182, 78, 1) 44%,
-      rgba(242, 213, 112, 1) 49%,
-      rgba(249, 223, 123, 1) 51%,
-      rgba(255, 243, 166, 1) 52%,
-      rgba(249, 223, 123, 1) 59%,
-      rgba(181, 126, 16, 1) 84%,
-      rgba(229, 194, 91, 1) 95%,
-      rgba(249, 223, 123, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 223, 123, 1) 0%,
+    rgba(181, 126, 16, 1) 20%,
+    rgba(183, 129, 19, 1) 26%,
+    rgba(190, 140, 31, 1) 32%,
+    rgba(203, 157, 50, 1) 38%,
+    rgba(220, 182, 78, 1) 44%,
+    rgba(242, 213, 112, 1) 49%,
+    rgba(249, 223, 123, 1) 51%,
+    rgba(255, 243, 166, 1) 52%,
+    rgba(249, 223, 123, 1) 59%,
+    rgba(181, 126, 16, 1) 84%,
+    rgba(229, 194, 91, 1) 95%,
+    rgba(249, 223, 123, 1) 100%
+  );
   border-radius: 10px;
   margin: auto;
   padding: 2px;
@@ -5155,12 +5111,7 @@ body {
   animation-duration: 0.4s;
 
   .withdrawal {
-    background: linear-gradient(to left,
-        #242424,
-        #0a0000,
-        #191919,
-        #000000,
-        #242424);
+    background: linear-gradient(to left, #242424, #0a0000, #191919, #000000, #242424);
     width: 100%;
     border-radius: 9px;
     display: flex;
@@ -5200,20 +5151,22 @@ body {
     border-radius: 10px;
     min-width: 25%;
     padding: 2px;
-    background: linear-gradient(90deg,
-        rgba(249, 223, 123, 1) 0%,
-        rgba(181, 126, 16, 1) 20%,
-        rgba(183, 129, 19, 1) 26%,
-        rgba(190, 140, 31, 1) 32%,
-        rgba(203, 157, 50, 1) 38%,
-        rgba(220, 182, 78, 1) 44%,
-        rgba(242, 213, 112, 1) 49%,
-        rgba(249, 223, 123, 1) 51%,
-        rgba(255, 243, 166, 1) 52%,
-        rgba(249, 223, 123, 1) 59%,
-        rgba(181, 126, 16, 1) 84%,
-        rgba(229, 194, 91, 1) 95%,
-        rgba(249, 223, 123, 1) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(249, 223, 123, 1) 0%,
+      rgba(181, 126, 16, 1) 20%,
+      rgba(183, 129, 19, 1) 26%,
+      rgba(190, 140, 31, 1) 32%,
+      rgba(203, 157, 50, 1) 38%,
+      rgba(220, 182, 78, 1) 44%,
+      rgba(242, 213, 112, 1) 49%,
+      rgba(249, 223, 123, 1) 51%,
+      rgba(255, 243, 166, 1) 52%,
+      rgba(249, 223, 123, 1) 59%,
+      rgba(181, 126, 16, 1) 84%,
+      rgba(229, 194, 91, 1) 95%,
+      rgba(249, 223, 123, 1) 100%
+    );
   }
 
   .none-active {
@@ -5398,7 +5351,7 @@ body {
   padding: 8px 0px 8px 0px;
   font-weight: 500;
   text-align: center;
-  
+
   font-size: 17px;
   margin-top: 20px;
 }
@@ -5515,20 +5468,22 @@ body {
     }
 
     .active.slider {
-      background: linear-gradient(90deg,
-          rgba(249, 223, 123, 0.8) 0%,
-          rgba(181, 126, 16, 0.8) 20%,
-          rgba(183, 129, 19, 0.8) 26%,
-          rgba(190, 140, 31, 0.8) 32%,
-          rgba(203, 157, 50, 0.8) 38%,
-          rgba(220, 182, 78, 0.8) 44%,
-          rgba(242, 213, 112, 0.8) 49%,
-          rgba(249, 223, 123, 0.8) 51%,
-          rgba(255, 243, 166, 0.8) 52%,
-          rgba(249, 223, 123, 0.8) 59%,
-          rgba(181, 126, 16, 0.8) 84%,
-          rgba(229, 194, 91, 0.8) 95%,
-          rgba(249, 223, 123, 0.8) 100%);
+      background: linear-gradient(
+        90deg,
+        rgba(249, 223, 123, 0.8) 0%,
+        rgba(181, 126, 16, 0.8) 20%,
+        rgba(183, 129, 19, 0.8) 26%,
+        rgba(190, 140, 31, 0.8) 32%,
+        rgba(203, 157, 50, 0.8) 38%,
+        rgba(220, 182, 78, 0.8) 44%,
+        rgba(242, 213, 112, 0.8) 49%,
+        rgba(249, 223, 123, 0.8) 51%,
+        rgba(255, 243, 166, 0.8) 52%,
+        rgba(249, 223, 123, 0.8) 59%,
+        rgba(181, 126, 16, 0.8) 84%,
+        rgba(229, 194, 91, 0.8) 95%,
+        rgba(249, 223, 123, 0.8) 100%
+      );
     }
 
     .slider {
@@ -5720,12 +5675,7 @@ body {
       text-align: center;
       color: #fff;
       border-radius: 10px;
-      background: linear-gradient(270deg,
-          #242424 0%,
-          #0a0000 23.44%,
-          #191919 52.6%,
-          #000000 81.25%,
-          #242424 100%);
+      background: linear-gradient(270deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000000 81.25%, #242424 100%);
       cursor: pointer;
     }
 
@@ -5737,20 +5687,22 @@ body {
       right: -1.5px;
       bottom: -1.5px;
       border-radius: 10px;
-      background: linear-gradient(90deg,
-          rgba(249, 223, 123, 1) 0%,
-          rgba(181, 126, 16, 1) 20%,
-          rgba(183, 129, 19, 1) 26%,
-          rgba(190, 140, 31, 1) 32%,
-          rgba(203, 157, 50, 1) 38%,
-          rgba(220, 182, 78, 1) 44%,
-          rgba(242, 213, 112, 1) 49%,
-          rgba(249, 223, 123, 1) 51%,
-          rgba(255, 243, 166, 1) 52%,
-          rgba(249, 223, 123, 1) 59%,
-          rgba(181, 126, 16, 1) 84%,
-          rgba(229, 194, 91, 1) 95%,
-          rgba(249, 223, 123, 1) 100%);
+      background: linear-gradient(
+        90deg,
+        rgba(249, 223, 123, 1) 0%,
+        rgba(181, 126, 16, 1) 20%,
+        rgba(183, 129, 19, 1) 26%,
+        rgba(190, 140, 31, 1) 32%,
+        rgba(203, 157, 50, 1) 38%,
+        rgba(220, 182, 78, 1) 44%,
+        rgba(242, 213, 112, 1) 49%,
+        rgba(249, 223, 123, 1) 51%,
+        rgba(255, 243, 166, 1) 52%,
+        rgba(249, 223, 123, 1) 59%,
+        rgba(181, 126, 16, 1) 84%,
+        rgba(229, 194, 91, 1) 95%,
+        rgba(249, 223, 123, 1) 100%
+      );
       z-index: -1;
     }
 
@@ -5775,20 +5727,22 @@ body {
 .border-gradient-gold {
   position: relative;
   z-index: -15;
-  background: linear-gradient(90deg,
-      rgba(249, 223, 123, 1) 0%,
-      rgba(181, 126, 16, 1) 20%,
-      rgba(183, 129, 19, 1) 26%,
-      rgba(190, 140, 31, 1) 32%,
-      rgba(203, 157, 50, 1) 38%,
-      rgba(220, 182, 78, 1) 44%,
-      rgba(242, 213, 112, 1) 49%,
-      rgba(249, 223, 123, 1) 51%,
-      rgba(255, 243, 166, 1) 52%,
-      rgba(249, 223, 123, 1) 59%,
-      rgba(181, 126, 16, 1) 84%,
-      rgba(229, 194, 91, 1) 95%,
-      rgba(249, 223, 123, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 223, 123, 1) 0%,
+    rgba(181, 126, 16, 1) 20%,
+    rgba(183, 129, 19, 1) 26%,
+    rgba(190, 140, 31, 1) 32%,
+    rgba(203, 157, 50, 1) 38%,
+    rgba(220, 182, 78, 1) 44%,
+    rgba(242, 213, 112, 1) 49%,
+    rgba(249, 223, 123, 1) 51%,
+    rgba(255, 243, 166, 1) 52%,
+    rgba(249, 223, 123, 1) 59%,
+    rgba(181, 126, 16, 1) 84%,
+    rgba(229, 194, 91, 1) 95%,
+    rgba(249, 223, 123, 1) 100%
+  );
   border-radius: 10px;
   margin: auto;
   padding: 30px;
@@ -5844,12 +5798,7 @@ body {
       width: 100%;
       border-radius: 20px;
       height: 71px;
-      background: linear-gradient(270deg,
-          #242424 0%,
-          #0a0000 23.44%,
-          #191919 52.6%,
-          #000000 81.25%,
-          #242424 100%);
+      background: linear-gradient(270deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000000 81.25%, #242424 100%);
     }
 
     .promotion-modal-footer-content::before {
@@ -5860,20 +5809,22 @@ body {
       right: -1.5px;
       bottom: -1.5px;
       border-radius: 20px;
-      background: linear-gradient(90deg,
-          rgba(249, 223, 123, 1) 0%,
-          rgba(181, 126, 16, 1) 20%,
-          rgba(183, 129, 19, 1) 26%,
-          rgba(190, 140, 31, 1) 32%,
-          rgba(203, 157, 50, 1) 38%,
-          rgba(220, 182, 78, 1) 44%,
-          rgba(242, 213, 112, 1) 49%,
-          rgba(249, 223, 123, 1) 51%,
-          rgba(255, 243, 166, 1) 52%,
-          rgba(249, 223, 123, 1) 59%,
-          rgba(181, 126, 16, 1) 84%,
-          rgba(229, 194, 91, 1) 95%,
-          rgba(249, 223, 123, 1) 100%);
+      background: linear-gradient(
+        90deg,
+        rgba(249, 223, 123, 1) 0%,
+        rgba(181, 126, 16, 1) 20%,
+        rgba(183, 129, 19, 1) 26%,
+        rgba(190, 140, 31, 1) 32%,
+        rgba(203, 157, 50, 1) 38%,
+        rgba(220, 182, 78, 1) 44%,
+        rgba(242, 213, 112, 1) 49%,
+        rgba(249, 223, 123, 1) 51%,
+        rgba(255, 243, 166, 1) 52%,
+        rgba(249, 223, 123, 1) 59%,
+        rgba(181, 126, 16, 1) 84%,
+        rgba(229, 194, 91, 1) 95%,
+        rgba(249, 223, 123, 1) 100%
+      );
       z-index: -1;
     }
 
@@ -5896,21 +5847,23 @@ body {
         width: 0;
       }
 
-      .promotion-default-radio:checked+.promotion-checkbox-title {
-        background: linear-gradient(180deg,
-            rgba(249, 223, 123, 0.8) 0%,
-            rgba(181, 126, 16, 0.8) 20%,
-            rgba(183, 129, 19, 0.8) 26%,
-            rgba(190, 140, 31, 0.8) 32%,
-            rgba(203, 157, 50, 0.8) 38%,
-            rgba(220, 182, 78, 0.8) 44%,
-            rgba(242, 213, 112, 0.8) 49%,
-            rgba(249, 223, 123, 0.8) 51%,
-            rgba(255, 243, 166, 0.8) 52%,
-            rgba(249, 223, 123, 0.8) 59%,
-            rgba(181, 126, 16, 0.8) 84%,
-            rgba(229, 194, 91, 0.8) 95%,
-            rgba(249, 223, 123, 0.8) 100%);
+      .promotion-default-radio:checked + .promotion-checkbox-title {
+        background: linear-gradient(
+          180deg,
+          rgba(249, 223, 123, 0.8) 0%,
+          rgba(181, 126, 16, 0.8) 20%,
+          rgba(183, 129, 19, 0.8) 26%,
+          rgba(190, 140, 31, 0.8) 32%,
+          rgba(203, 157, 50, 0.8) 38%,
+          rgba(220, 182, 78, 0.8) 44%,
+          rgba(242, 213, 112, 0.8) 49%,
+          rgba(249, 223, 123, 0.8) 51%,
+          rgba(255, 243, 166, 0.8) 52%,
+          rgba(249, 223, 123, 0.8) 59%,
+          rgba(181, 126, 16, 0.8) 84%,
+          rgba(229, 194, 91, 0.8) 95%,
+          rgba(249, 223, 123, 0.8) 100%
+        );
 
         .promotion-custom-radio {
           background-color: #000;
@@ -5925,10 +5878,7 @@ body {
         color: #fff;
         margin: 0;
         border-radius: 5px;
-        background: linear-gradient(180deg,
-            #000000 0%,
-            #3c3b3b 48.96%,
-            #000000 100%);
+        background: linear-gradient(180deg, #000000 0%, #3c3b3b 48.96%, #000000 100%);
 
         display: flex;
         justify-content: center;
@@ -5945,20 +5895,22 @@ body {
         }
 
         &.active {
-          background: linear-gradient(180deg,
-              rgba(249, 223, 123, 0.8) 0%,
-              rgba(181, 126, 16, 0.8) 20%,
-              rgba(183, 129, 19, 0.8) 26%,
-              rgba(190, 140, 31, 0.8) 32%,
-              rgba(203, 157, 50, 0.8) 38%,
-              rgba(220, 182, 78, 0.8) 44%,
-              rgba(242, 213, 112, 0.8) 49%,
-              rgba(249, 223, 123, 0.8) 51%,
-              rgba(255, 243, 166, 0.8) 52%,
-              rgba(249, 223, 123, 0.8) 59%,
-              rgba(181, 126, 16, 0.8) 84%,
-              rgba(229, 194, 91, 0.8) 95%,
-              rgba(249, 223, 123, 0.8) 100%);
+          background: linear-gradient(
+            180deg,
+            rgba(249, 223, 123, 0.8) 0%,
+            rgba(181, 126, 16, 0.8) 20%,
+            rgba(183, 129, 19, 0.8) 26%,
+            rgba(190, 140, 31, 0.8) 32%,
+            rgba(203, 157, 50, 0.8) 38%,
+            rgba(220, 182, 78, 0.8) 44%,
+            rgba(242, 213, 112, 0.8) 49%,
+            rgba(249, 223, 123, 0.8) 51%,
+            rgba(255, 243, 166, 0.8) 52%,
+            rgba(249, 223, 123, 0.8) 59%,
+            rgba(181, 126, 16, 0.8) 84%,
+            rgba(229, 194, 91, 0.8) 95%,
+            rgba(249, 223, 123, 0.8) 100%
+          );
         }
       }
     }
@@ -6104,7 +6056,8 @@ body {
     }
   }
 
-  .confirmation {}
+  .confirmation {
+  }
 
   .info-text {
     text-align: center;
@@ -6204,12 +6157,7 @@ body {
       flex-shrink: 0;
       border-radius: 7px;
       border: 1px solid #f9df7b;
-      background: linear-gradient(to left,
-          #242424,
-          #0a0000,
-          #191919,
-          #000000,
-          #242424);
+      background: linear-gradient(to left, #242424, #0a0000, #191919, #000000, #242424);
       font-size: 16px;
       font-weight: 500;
       color: $white;
@@ -6245,7 +6193,7 @@ body {
   gap: 10px;
   padding: 30px 10px 15px 10px;
 
-  &>* {
+  & > * {
     width: 100%;
   }
 
@@ -6394,7 +6342,7 @@ body {
   .bank-input {
     position: relative;
 
-    &>* {
+    & > * {
       display: block;
       width: 100%;
     }
@@ -6641,20 +6589,22 @@ body {
 }
 
 .border-input-gold {
-  background: linear-gradient(90deg,
-      rgba(249, 223, 123, 1) 0%,
-      rgba(181, 126, 16, 1) 20%,
-      rgba(183, 129, 19, 1) 26%,
-      rgba(190, 140, 31, 1) 32%,
-      rgba(203, 157, 50, 1) 38%,
-      rgba(220, 182, 78, 1) 44%,
-      rgba(242, 213, 112, 1) 49%,
-      rgba(249, 223, 123, 1) 51%,
-      rgba(255, 243, 166, 1) 52%,
-      rgba(249, 223, 123, 1) 59%,
-      rgba(181, 126, 16, 1) 84%,
-      rgba(229, 194, 91, 1) 95%,
-      rgba(249, 223, 123, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 223, 123, 1) 0%,
+    rgba(181, 126, 16, 1) 20%,
+    rgba(183, 129, 19, 1) 26%,
+    rgba(190, 140, 31, 1) 32%,
+    rgba(203, 157, 50, 1) 38%,
+    rgba(220, 182, 78, 1) 44%,
+    rgba(242, 213, 112, 1) 49%,
+    rgba(249, 223, 123, 1) 51%,
+    rgba(255, 243, 166, 1) 52%,
+    rgba(249, 223, 123, 1) 59%,
+    rgba(181, 126, 16, 1) 84%,
+    rgba(229, 194, 91, 1) 95%,
+    rgba(249, 223, 123, 1) 100%
+  );
   border-radius: 10px;
   margin: auto;
   padding: 1px;

@@ -18,14 +18,14 @@
       </div>
     </div>
     <div class="middle">
-      <img src="/assets/images/logo.svg" alt="logo" height="49px" style="cursor: pointer" id="banner" />
+      <!-- <img src="/assets/images/logo.svg" alt="logo" height="49px" style="cursor: pointer" id="banner" /> -->
     </div>
     <div class="right">
       <div class="gem-balance">
         <img src="/assets/images/gem.svg" alt="gem" />
         100
       </div>
-      <img src="/assets//images/icon-hamburger.svg" alt="hamburger" class="hamburger" height="37px" width="35px" />
+      <img src="/assets/new-icons/hamburger-menu.svg" alt="hamburger" class="hamburger" height="37px" width="35px" />
     </div>
   </header>
 
@@ -3012,23 +3012,31 @@
   </div>
   <!-- change password modal end -->
 
-  <footer class="footer" id="footer-desktop">
-    <div class="menu-wrapper">
-      <div class="footer-item flexCenter" id="footer-login-button">
-        <img src="/assets/icons/login-icon.svg" alt="login" />
-        <p class="font-20">เข้าสู่ระบบ</p>
+
+   <footer class="footer" id="footer-desktop">
+      <div class="menu-wrapper">
+        <div class="footer-item flexCenter">
+          <img src="/assets/new-icons/home.png" alt="login" />
+          <p class="font-20">หน้าหลัก</p>
+        </div>
+        <div class="footer-item flexCenter" data-bs-toggle="modal" data-bs-target="#promotionModal" data-bs-dismiss="modal">
+          <img src="/assets/new-icons/gift.png" alt="login" />
+          <p class="font-20">โปรโมชั่น</p>
+        </div>
+        <div class="footer-item flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" class="footer-item flexCenter">
+          <img src="/assets/new-icons/return-money.png" alt="login" />
+          <p class="font-20">ฝาก-ถอน</p>
+        </div>
+        <div class="footer-item flexCenter" class="footer-item flexCenter" data-bs-toggle="modal" data-bs-target="#bagModal">
+          <img src="/assets/new-icons/money-bag.png" alt="login" />
+          <p class="font-20">กระเป๋า</p>
+        </div>
+        <div class="footer-item flexCenter">
+          <img src="/assets/new-icons/gain-money.svg" alt="login" />
+          <p class="font-20">รับทรัพย์</p>
+        </div>
       </div>
-      <div class="footer-item flexCenter" id="footer-signup-button" data-bs-toggle="modal"
-        data-bs-target="#signUpModal">
-        <img src="/assets/icons/register-icon.svg" alt="login" />
-        <p class="font-20">สมัครสมาชิก</p>
-      </div>
-      <div class="footer-item flexCenter">
-        <img src="/assets/icons/contact-admin.svg" alt="login" />
-        <p class="font-20">ติดต่อแอดมิน</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
   <footer class="footer" id="footer-mobile">
     <div class="menu-wrapper">

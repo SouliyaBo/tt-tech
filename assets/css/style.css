@@ -29,7 +29,7 @@ body {
   justify-content: space-between;
   width: 100vw;
   height: 61px;
-  background: linear-gradient(to right, #242424, #0a0000, #191919, #000000, #242424);
+  background: linear-gradient(180deg, #102b36 0%, #081f27 100%);
   padding: 16px 23px 18px 23px; }
   .header .left {
     display: flex;
@@ -46,17 +46,22 @@ body {
     flex-direction: row;
     gap: 15px; }
     .header .right .button {
-      color: #ffff;
       font-weight: 600;
-      background-color: #000000;
       font-size: 20px;
       border-radius: 38px;
-      border: 1px solid #a68859;
       cursor: pointer; }
     .header .right .desktop-button {
       height: 35px;
       width: 114px;
       font-size: 16px; }
+    .header .right #singup-btn {
+      border: 1px solid #a68859;
+      color: black;
+      background: #fdd880; }
+    .header .right #loginBtn {
+      border: 1px solid #fdd880;
+      color: #fdd880;
+      background: none; }
     .header .right .mobile-button {
       display: none; }
     .header .right img {
@@ -71,7 +76,7 @@ body {
   justify-content: space-around;
   width: 100vw;
   height: 61px;
-  background: linear-gradient(to right, #242424, #0a0000, #191919, #000000, #242424);
+  background: linear-gradient(180deg, #102b36 0%, #081f27 100%);
   padding: 16px 23px 18px 23px; }
   .login-page-header .coin-balance,
   .login-page-header .gem-balance {
@@ -193,8 +198,8 @@ body {
       border: solid 6px transparent;
       /* !importanté */
       border-radius: 1em;
-      border: 3px solid #f9df7b;
-      background: linear-gradient(0deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000 81.25%, #242424 100%);
+      border: 3px solid #fdd880;
+      background: linear-gradient(180deg, #102b36 0%, #081f27 100%);
       box-shadow: 0px 5px 4px 0px #000; }
       .featured-game-wrapper .container .featured-game:hover {
         transform: scale(1.05);
@@ -243,7 +248,9 @@ body {
     gap: 23px; }
     .card-container .card-wrapper .game-card {
       position: relative;
-      border-radius: 30px; }
+      border-radius: 10px;
+      border: 3px solid #fdd880;
+      height: 286px; }
       .card-container .card-wrapper .game-card:hover {
         transform: translateY(-10px);
         transition: all 0.3s ease-in-out; }
@@ -503,7 +510,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(270deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000 81.25%, #242424 100%);
+  background: linear-gradient(180deg, #102b36 0%, #081f27 100%);
   box-shadow: 0px -4px 7px 0px rgba(0, 0, 0, 0.39); }
   .footer .menu-wrapper {
     min-width: auto;
@@ -517,6 +524,8 @@ body {
       background: none;
       outline: none;
       border: none; }
+      .footer .menu-wrapper .footer-item p {
+        color: #fdd880; }
       .footer .menu-wrapper .footer-item img {
         width: 44px;
         height: 44px; }
@@ -2559,7 +2568,7 @@ body {
   .modal .modal-border {
     position: relative;
     z-index: -15;
-    background: linear-gradient(90deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%);
+    background: #fdd880;
     border-radius: 20px;
     margin: auto;
     padding: 2px;
@@ -2568,7 +2577,7 @@ body {
   .modal .modal-content {
     position: relative;
     z-index: -10;
-    background-color: #000;
+    background: linear-gradient(180deg, #102b36 0%, #081f27 100%);
     border-radius: 20px;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
@@ -2585,8 +2594,8 @@ body {
       position: relative;
       margin: auto;
       width: fit-content;
-      background: linear-gradient(270deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000000 81.25%, #242424 100%);
-      border-radius: 15px;
+      background: linear-gradient(180deg, #102b36 0%, #081f27 100%);
+      border-radius: 10px;
       padding: 10px;
       display: flex;
       justify-content: center;
@@ -2600,8 +2609,8 @@ body {
       right: -2px;
       bottom: -2px;
       z-index: -1;
-      background: linear-gradient(90deg, rgba(249, 223, 123, 0.8) 0%, rgba(181, 126, 16, 0.8) 20%, rgba(183, 129, 19, 0.8) 26%, rgba(190, 140, 31, 0.8) 32%, rgba(203, 157, 50, 0.8) 38%, rgba(220, 182, 78, 0.8) 44%, rgba(242, 213, 112, 0.8) 49%, rgba(249, 223, 123, 0.8) 51%, rgba(255, 243, 166, 0.8) 52%, rgba(249, 223, 123, 0.8) 59%, rgba(181, 126, 16, 0.8) 84%, rgba(229, 194, 91, 0.8) 95%, rgba(249, 223, 123, 0.8) 100%);
-      border-radius: 15px;
+      background: #fdd880;
+      border-radius: 10px;
       pointer-events: none; }
     .modal .modal-header-container .modal-icon-back {
       position: absolute;
@@ -3037,7 +3046,7 @@ body {
         .change-cashback-detail-modal-content .detail .accumulated-lot-amount .text-amount .history-background {
           font-weight: 500;
           color: #000;
-          background-color: #0FF;
+          background-color: #0ff;
           border-radius: 5px;
           padding: 2px 5px 2px 5px; }
     .change-cashback-detail-modal-content .detail .your-loss {
