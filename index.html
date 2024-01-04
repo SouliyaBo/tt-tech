@@ -565,36 +565,112 @@
 
       <!-- Side Bar -->
       <div class="sidebar-container">
-        <aside class="sidebar">
-          <div class="icon-turn-back">
+        <aside class="sidebar flexCenter">
+          <!-- <div class="icon-turn-back">
             <img src="/assets/images/turn-back 1.png" alt="" />
+          </div> -->
+          <div style="width: 100%;">
+            <div class="logo flexCenter">
+            LOGO
           </div>
-          <img src="/assets/images/logo-landscape.svg" alt="logo" />
-          <div class="flexBetween font-14">
-            <p>Username:</p>
-            <p>ST1561651</p>
-          </div>
-          <div class="flexBetween font-14">
-            <p>Phone :</p>
-            <p>095-222-9999</p>
-          </div>
-          <div class="balance">
-            <small>ยอดเงินคงเหลือ</small>
-            <p>1,000.00</p>
           </div>
 
-          <div class="flexBetween" style="gap: 13px">
-            <button class="gradient-border sidebar-button flexCenter" style="width: 50%" data-bs-toggle="modal" data-bs-target="#profile">
-              โปรไฟล์
-            </button>
-            <button class="gradient-border sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" style="width: 50%">
-              ฝาก-ถอน
-            </button>
+          <div class="profile flexBetween">
+              <div class="left flexCenter">
+                <img src="/assets/new-image/ruby.png" alt="ruby">
+              </div>
+              <div class="right ">
+                <div class="level flexCenter">
+                  Level: <span >newbie</span>
+                </div>
+                <p>เบอรโทรศัพท์ : <span>089-0009999</span></p>
+                <p>ธนาคาร : <span>ธนาคารกสิกรไทย</span></p>
+                <p>เลขที่บัญชี : <span>024-2133-331</span></p>
+              </div>
           </div>
-          <div class="flexBetween" style="gap: 13px">
-            <button
-              class="gradient-border sidebar-button flexCenter"
-              style="width: 50%"
+
+          <div style="width: 100%;">
+            <div class="exp flexCenter">
+                <img src="/assets/new-image/ruby.png" alt="ruby">
+                EXP : 0 / 50000
+          </div>
+          </div>
+
+          <div class="credit-balance flexCenter">
+              <p>จำนวนเครดิตคงเหลือ</p>
+              <span>0</span>
+          </div>
+
+          <div class="balance flexBetween">
+            <div class="left">
+              <p>ยอดเทิร์นคงเหลือ</p>
+              <span>0/0</span>
+            </div>
+            <div class="right">
+               <p>เพชร</p>
+              <span>0</span>
+            </div>
+          </div>
+
+          <div class="button-container">
+
+            <button class=" sidebar-button flexCenter"  data-bs-toggle="modal" data-bs-target="#profile">
+              <img src="/assets/new-icons/deposit 1.png" alt="icon">
+              ฝากเงิน
+            </button>
+            <button class=" sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" >
+              <img src="/assets/new-icons/atm 1.png" alt="icon">
+
+              ถอนเงิน
+            </button>
+            <button class=" sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" >
+              <img src="/assets/new-icons/gift-box 1.png" alt="icon">
+
+              โปรโมชั่น
+            </button>
+            <button class=" sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" >
+              <img src="/assets/new-icons/cashback 1.png" alt="icon">
+
+              คืนยอดเสีย
+            </button>
+             <button class=" sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" >
+              <img src="/assets/new-icons/money-tree 1.png" alt="icon">
+
+              สร้างรายได้
+            </button>
+             <button class=" sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" >
+              <img src="/assets/new-icons/gift-card 1.png" alt="icon">
+
+              กรอกโค้ด
+            </button>
+             <button class=" sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" >
+              <img src="/assets/new-icons/coin 1.png" alt="icon">
+
+              เครดิตฟรี
+            </button>
+             <button class=" sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" >
+              <img src="/assets/new-icons/jewellery 1.png" alt="icon">
+
+              เพชรฟรี
+            </button>
+             <button class=" sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" >
+              <img src="/assets/new-icons/lottery 1.png" alt="icon">
+
+              กงล้อ
+            </button>
+             <button class=" sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" >
+              <img src="/assets/new-icons/ranking 1.png" alt="icon">
+
+              ทัวร์นาเมนต์
+            </button>
+             <button class=" sidebar-button flexCenter" data-bs-toggle="modal" data-bs-target="#depositWithdraw" >
+              <img src="/assets/new-icons/road 1.png" alt="icon">
+
+              Roadmap
+            </button>
+
+            <!-- <button
+              class=" sidebar-button flexCenter"
               id="bag-modal-btn"
               data-bs-toggle="modal"
               data-bs-target="#bagModal"
@@ -602,39 +678,26 @@
               กระเป๋า
             </button>
             <button
-              class="gradient-border sidebar-button flexCenter"
-              style="width: 50%"
+              class=" sidebar-button flexCenter"
               id="history-btn"
               data-bs-toggle="modal"
               data-bs-target="#historyModal"
             >
               ประวัติ
             </button>
-          </div>
-          <div class="flexBetween" style="gap: 13px">
-            <button class="gradient-border sidebar-button flexCenter" style="width: 50%">ไลน์บอท</button>
-            <button class="gradient-border sidebar-button flexCenter" style="width: 50%">ติดต่อพนักงาน</button>
-          </div>
-          <button
-            class="gradient-border sidebar-button flexCenter"
-            style="width: 100%; margin-bottom: 16px"
-            data-bs-toggle="modal"
-            data-bs-target="#changePasswordModal"
-          >
-            เปลี่ยนรหัสผ่าน
-          </button>
-          <button class="gradient-border sidebar-button flexCenter" style="width: 100%; margin-bottom: 16px">ออกจากระบบ</button>
-
-          <div class="download-container">
-            <h3>ดาวน์โหลดแอปเลย !</h3>
-            <div class="flexBetween" style="gap: 6px">
-              <img src="/assets//images/get-it-playstore.svg" alt="download icon" style="height: 32px; cursor: pointer" />
-              <img src="/assets//images/get-it-appstore.svg" alt="download icon" style="height: 32px; cursor: pointer" />
-            </div>
+            <button class=" sidebar-button flexCenter" >ไลน์บอท</button>
+            <button class=" sidebar-button flexCenter" >ติดต่อพนักงาน</button> -->
           </div>
 
-          <h4>Power by</h4>
-          <img src="/assets/images/powerby.svg" alt="powerby" />
+
+
+
+
+
+          <div style="width: 100%;">
+          <button class="logout-button" type="button">ออกจากระบบ</button>
+
+          </div>
         </aside>
         <div class="sidebar-container-background"></div>
       </div>
