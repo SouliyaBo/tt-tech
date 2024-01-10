@@ -91,6 +91,16 @@ body {
   background: #555;
 }
 
+// components
+.primary-button{
+  border-radius: 4px;
+background: #FDD880;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+color: #0B242D;
+font-weight: 600;
+}
+
 // Index Page
 .header {
   position: fixed;
@@ -3826,7 +3836,7 @@ img{
           padding: 78px 20px 42px 20px;
           gap: 44px;
 
-          .button-warning {
+          .primary-button{
             height: 60px;
             font-size: 18px;
           }
@@ -4397,7 +4407,7 @@ img{
   }
 
   .modal-title {
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
     margin: 0;
     font-size: 16px;

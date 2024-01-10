@@ -37,6 +37,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; }
 
+.primary-button {
+  border-radius: 4px;
+  background: #FDD880;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #0B242D;
+  font-weight: 600; }
+
 .header {
   position: fixed;
   top: 0;
@@ -2399,7 +2406,7 @@ body {
         width: 476px;
         padding: 78px 20px 42px 20px;
         gap: 44px; }
-        .modal .modal-content .modal-body .code-modal-content .button-warning {
+        .modal .modal-content .modal-body .code-modal-content .primary-button {
           height: 60px;
           font-size: 18px; }
       .modal .modal-content .modal-body .slip-verify-content {
@@ -2727,7 +2734,7 @@ body {
     color: #fff;
     padding: 8px 16px; }
   .modal .modal-title {
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
     margin: 0;
     font-size: 16px; }
